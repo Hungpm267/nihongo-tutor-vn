@@ -152,76 +152,6 @@ hoạt skill khi bạn nhắc tới việc học tiếng Nhật.
 
 ## Quy trình sử dụng
 
-Buổi đầu tiên khác các buổi sau, nên tách riêng.
-
-### Buổi đầu tiên (~15 phút)
-
-Mở terminal, chạy Claude Code hoặc Gemini CLI ở bất kỳ thư mục nào, gõ "học
-tiếng Nhật" (hoặc `/nihongo` với Gemini CLI). Skill tìm
-`~/.nihongo-tutor/progress.json`, không thấy nên biết đây là lần đầu.
-
-Nó hỏi bốn câu ngắn: tên gọi, mỗi lần học được bao lâu và mấy lần một tuần, có
-muốn hiển thị romaji không, và mục tiêu của bạn. **Không có bài kiểm tra trình
-độ** — nếu bạn bắt đầu từ 0 thì kiểm tra là vô nghĩa và chỉ gây nản.
-
-Trả lời xong, nó tạo file tiến độ rồi dạy luôn trong cùng buổi đó: 5 chữ
-hiragana あいうえお và 5 katakana アイウエオ tương ứng. Đây là chủ ý — bạn phải
-rời buổi đầu tiên với cảm giác đã học được thứ gì thật, không phải chỉ ngồi
-trả lời câu hỏi thiết lập.
-
-### Các buổi sau
-
-Vẫn gõ "học tiếng Nhật". Skill đọc tiến độ, biết bạn đang ở đâu, rồi chạy theo
-trình tự:
-
-1. **Thu hoạch** — hỏi hôm nay ở công ty bạn có nghe hay thấy tiếng Nhật nào lạ
-   không. Một từ sếp hay nói, một dòng trên bảng thông báo, kể cả chỉ nhớ mang
-   máng cách phát âm cũng đưa vào được, skill sẽ đoán giúp. Không có gì thì bỏ
-   qua, không sao cả.
-2. **Chọn chế độ** — hôm nay bạn có bao nhiêu thời gian. Trả lời thật. "10 phút
-   thôi" là câu trả lời hợp lệ và vẫn tính đủ một buổi.
-3. **Ôn tập giãn cách** — vài từ đến hạn, dạng câu hỏi thay đổi liên tục.
-4. **Nội dung mới** — kana, từ vựng, kanji, hoặc ngữ pháp tùy giai đoạn.
-5. **Hội thoại** — bỏ qua ở chế độ 10 phút.
-6. **Bài tập và lưu tiến độ.**
-
-### Mấy câu đáng thuộc
-
-| Gõ | Kết quả |
-|---|---|
-| `học tiếng Nhật` | Bắt đầu buổi học |
-| `hôm nay tôi chỉ có 10 phút` | Chạy chế độ ngắn |
-| `tiến độ tới đâu rồi` | Bảng tổng kết |
-| `gợi ý` | Xin trợ giúp giữa lúc hội thoại |
-| `sếp nói かくにん là gì vậy?` | Hỏi lẻ, không cần đang trong buổi học |
-
-### Dùng chung tiến độ giữa hai công cụ
-
-Cả Claude Code và Gemini CLI đều đọc ghi cùng file
-`~/.nihongo-tutor/progress.json`. Học bằng Claude Code hôm nay, mai mở Gemini
-CLI học tiếp, tiến độ vẫn liền mạch. Bạn không bị khóa vào một công cụ nào.
-
-Đổi lại, file đó là toàn bộ trí nhớ của gia sư — mất nó là mất sạch. Nên
-thỉnh thoảng sao lưu, hoặc đẩy vào một repo **private** riêng. Đừng đẩy vào
-repo skill public; `.gitignore` đã chặn sẵn vì lý do này.
-
-### Nhịp học khuyến nghị
-
-Bốn đến năm buổi một tuần, phần lớn dùng chế độ 10 phút, thỉnh thoảng một buổi
-dài vào cuối tuần. Đều đặn ăn đứt cường độ, nhất là khi không có deadline nào
-ép bạn cả.
-
-Hai việc nằm ngoài skill nhưng quan trọng không kém:
-
-- **Cài Mazii trên điện thoại** để tra chữ lạ ngay tại công ty. Nó hiện luôn âm
-  Hán-Việt của kanji, đúng thứ skill này dựa vào.
-- **Nghe 5 phút mỗi ngày** trên đường đi làm, kể cả khi chưa hiểu gì. Skill
-  không phát được âm thanh, phần nghe phải đến từ nguồn ngoài.
-
----
-
-## Quy trình sử dụng
-
 ### Buổi đầu tiên (~15 phút)
 
 Chạy Claude Code hoặc Gemini CLI ở bất kỳ thư mục nào, gõ "học tiếng Nhật"
@@ -285,10 +215,41 @@ dài vào cuối tuần. Đều đặn ăn đứt cường độ, nhất là khi
 luôn âm Hán-Việt, nhận diện chữ bằng camera. Bạn sẽ cần nó mỗi khi gặp chữ lạ
 trên bảng thông báo ở công ty.
 
-**Nghe 5 phút mỗi ngày trên đường đi làm, kể cả khi chưa hiểu gì.** Skill không
-phát được âm thanh — nó soạn bản shadowing, giao đúng đoạn cần nghe và kiểm tra
-lại ở buổi sau, nhưng phần nghe thật phải đến từ nguồn ngoài. Nghe hiểu là kỹ
-năng chậm nhất, và cách duy nhất là tiếp xúc âm thanh hằng ngày từ sớm.
+**Nghe 5 phút mỗi ngày trên đường đi làm, kể cả khi chưa hiểu gì.** Skill có
+thể phát âm từng từ nếu bạn bật TTS (xem mục *Bật phát âm*), soạn bản
+shadowing, giao đúng đoạn cần nghe và kiểm tra lại ở buổi sau — nhưng giọng
+người thật trong hội thoại phải đến từ nguồn ngoài. Nghe hiểu là kỹ năng chậm
+nhất, và cách duy nhất là tiếp xúc âm thanh hằng ngày từ sớm.
+
+---
+
+## Bật phát âm (TTS)
+
+Skill có thể đọc to từ mới và bản shadowing bằng giọng Nhật qua
+`skills/nihongo-tutor-vn/scripts/speak.py`. Script tự chọn công cụ đầu tiên
+chạy được theo thứ tự: **edge-tts** (giọng `ja-JP-NanamiNeural`) → **gTTS** →
+`say -v Kyoko` (macOS) → Windows SAPI (chỉ khi máy có giọng tiếng Nhật). Phát
+bằng `afplay` / `mpv` / `ffplay` / PowerShell tùy hệ điều hành.
+
+```bash
+python -m pip install edge-tts     # khuyến nghị; cần mạng khi phát
+python skills/nihongo-tutor-vn/scripts/speak.py --check
+python skills/nihongo-tutor-vn/scripts/speak.py "お疲れ様です"
+python skills/nihongo-tutor-vn/scripts/speak.py "確認" --save kakunin.mp3
+```
+
+Ở buổi thiết lập, skill hỏi bạn có muốn bật phát âm không và lưu vào
+`profile.tts`. Đổi sau bằng `progress.py set --key tts --value true|false`.
+Khi tắt, hoặc script không chạy được, skill bỏ qua yên lặng — không lặp lại
+thông báo lỗi ở mỗi từ.
+
+**Kết quả kiểm tra thực tế trên máy phát triển** (Windows 11, Python 3.14):
+`pip install edge-tts` cài được (bản 7.2.8) và phát được ngay qua PowerShell
+(`System.Windows.Media.MediaPlayer`), mất khoảng 5–6 giây mỗi lần vì phải tổng
+hợp qua mạng. gTTS chưa thử vì edge-tts đã đủ. Windows SAPI **không** dùng được
+trên máy này vì chỉ có giọng en-US (David, Zira) — muốn dùng phải cài gói
+giọng tiếng Nhật trong *Settings → Time & language → Speech*. `mpv`/`ffplay`
+không có nhưng không cần.
 
 ---
 

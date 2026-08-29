@@ -104,7 +104,7 @@ Không khớp nhánh nào → buổi học thường (Bước 1 hoặc Bước 2
 
 Người dùng bắt đầu từ con số 0, nên **không kiểm tra trình độ**. Bắt một người
 chưa biết chữ nào làm bài test 14 câu là vô nghĩa và gây nản. Chỉ hỏi 4 câu về
-hoàn cảnh, hỏi từng câu một:
+hoàn cảnh và một câu về phát âm, hỏi từng câu một:
 
 1. Tên gọi để xưng hô trong các buổi học.
 2. Thường học được bao lâu mỗi lần, và khoảng mấy lần một tuần?
@@ -112,9 +112,12 @@ hoàn cảnh, hỏi từng câu một:
    dùng lâu sẽ cản việc đọc kana. Khuyến nghị bật trong 2 tuần đầu rồi tắt.
 4. Có mục tiêu cụ thể nào không (thi JLPT, nói chuyện với đồng nghiệp, đọc
    bảng thông báo ở công ty), hay chỉ học đều?
+5. Có muốn bật phát âm không? Chạy `python scripts/speak.py --check` trước:
+   nếu OK thì hỏi và lưu `tts` theo câu trả lời; nếu không có công cụ thì nói
+   một câu là có thể bật sau khi cài (`pip install edge-tts`), đặt `tts false`.
 
 Sau đó tạo file bằng
-`python scripts/progress.py init --name "..." --romaji true|false --goals "..."`,
+`python scripts/progress.py init --name "..." --romaji true|false --tts true|false --goals "..."`,
 rồi **vào học ngay trong cùng buổi đó** — dạy 5 chữ hiragana đầu tiên (あいうえお) và 5 katakana tương
 ứng (アイウエオ). Người dùng phải rời buổi đầu tiên với cảm giác đã học được
 thứ gì đó thật, không phải chỉ trả lời câu hỏi.
@@ -236,6 +239,13 @@ Số mục mới theo chế độ: Nhanh 3, Chuẩn 5, Sâu 5 cộng một mản
 Bỏ dòng Hán-Việt nếu từ đó thuần Nhật (như たべる). Bỏ dòng "Ở công ty" nếu
 không liên quan — đừng gượng ép.
 
+**Phát âm (khi `profile.tts` là true):** ngay sau khi trình bày mỗi từ mới
+(và mỗi chữ kana ở giai đoạn 0), chạy
+`python scripts/speak.py "<từ hoặc câu ví dụ ①>" --quiet`. Bảo người dùng nhắc
+lại theo. Nếu lệnh trả mã khác 0 thì **bỏ qua yên lặng** và không gọi lại
+trong phần còn lại của buổi — tuyệt đối không lặp thông báo lỗi ở mỗi từ.
+Khi `tts` là false thì không nhắc gì tới phát âm.
+
 **Ngữ pháp:** đúng một điểm mỗi buổi (bỏ qua ở chế độ Nhanh). Khuôn mẫu: nó là
 gì → dùng khi nào → công thức → 3 ví dụ → lỗi người Việt hay mắc. Người dùng là
 giáo viên tiếng Anh nên dùng thuật ngữ ngữ pháp thoải mái, và so sánh với tiếng
@@ -264,18 +274,21 @@ này có giá trị thực tế cao hơn nhiều so với ngữ pháp tương đ
 
 ### Luyện nghe
 
-Skill này không phát được âm thanh. Đừng giả vờ ngược lại. Thay vào đó:
+Skill chỉ phát được âm thanh khi `profile.tts` bật và `scripts/speak.py` chạy
+được; ngoài ra thuần văn bản — đừng giả vờ ngược lại.
 
 1. **Soạn bản shadowing:** viết một đoạn 4–6 câu dùng nội dung hôm nay, kèm
-   phiên âm và dịch. Người dùng đọc to theo, lặp lại nhiều lần.
+   phiên âm và dịch. Nếu TTS bật: phát cả đoạn bằng
+   `python scripts/speak.py "<đoạn>" --quiet`, người dùng đọc theo; phát lại
+   từng câu nếu họ muốn. Nếu tắt: người dùng tự đọc to, lặp lại nhiều lần.
 2. **Giao bài nghe cụ thể:** chỉ đúng một nguồn và một tập/đoạn, không nói
    chung chung "nghe podcast đi". Xem `resources.json` mục `listening`.
 3. **Kiểm tra ở buổi sau:** hỏi họ nghe ra được gì, bắt được từ nào. Chấp nhận
    câu trả lời mơ hồ — mục tiêu giai đoạn đầu là quen âm, không phải hiểu hết.
 
-Nói thẳng với người dùng: nghe hiểu là kỹ năng lâu nhất, cần tiếp xúc âm thanh
-thật hằng ngày từ nguồn ngoài. Skill hỗ trợ được phần chuẩn bị và kiểm tra, chứ
-không thay thế được việc nghe.
+Nói thẳng với người dùng: nghe hiểu là kỹ năng lâu nhất, cần tiếp xúc giọng
+người thật hằng ngày từ nguồn ngoài. TTS giúp quen âm từng từ, nhưng không
+thay thế được việc nghe.
 
 ---
 
@@ -338,6 +351,8 @@ Dự phòng khi không chạy được script: mẫu báo cáo nằm trong
 - `references/workplace-japanese.md` — tiếng Nhật công sở và nhà máy: câu cứu
   nguy, chào hỏi, thuật ngữ sản xuất và IT. Đọc khi dạy nội dung công sở hoặc
   khi người dùng mang từ ở công ty về.
+- `scripts/speak.py` — phát âm tiếng Nhật ra loa (edge-tts → gTTS → say →
+  SAPI). `--check` để biết máy có công cụ nào; `--save file.mp3` để lưu.
 - `references/progress-format.md` — cấu trúc `progress.json`, bảng lệnh
   `scripts/progress.py`, mẫu báo cáo. Đọc khi cần sửa file bằng tay hoặc khi
   script báo lỗi cấu trúc.
