@@ -17,6 +17,8 @@ và in `Lỗi: ...` ra stderr.
 | `due --mode nhanh\|chuan\|sau [--all]` | Hàng đợi Leitner đến hạn (JSON). Giới hạn 5/8 mục; `--all` bỏ giới hạn. Hộp thấp trước. Trả thêm `suggest_tong_hop: true` khi buổi đang diễn ra chia hết cho 7. |
 | `review --jp "<mục>" --result correct\|hesitant\|wrong [--rule standard\|gentle]` | Cập nhật hộp (+1 / giữ / về 1) và `last_reviewed` = buổi đang diễn ra. `gentle` (ôn tổng hợp): sai ở hộp 4–5 chỉ tụt về 3. Tìm trong cả từ vựng, kanji, ngữ pháp. |
 | `sample --n <số> [--min-box <n>] [--topic "..."] [--type vocabulary kanji grammar kana hiragana katakana]` | Bốc ngẫu nhiên từ mọi hộp, xen kẽ loại (mục kana có `box: null`). Dùng cho ôn tổng hợp / theo chủ đề. |
+| `mark-taught --jp "<mục>" --result good\|partial\|wrong` | Chế độ dạy lại: good → +1 hộp, `taught: true`; partial → giữ; wrong → hộp 1, `taught: false`. |
+| `teachable [--min-box 3] [--n 8]` | Gợi ý chủ đề dạy lại: mục hộp ≥ 3 (chưa `taught` xếp trước) và ngữ pháp 5 buổi gần nhất. |
 | `add --jp --reading --vi [--han-viet] [--topic] [--source]` | Thêm từ vựng, hộp 1. Từ chối nếu trùng. `source`: lesson (mặc định), workplace, lookup, n5. |
 | `add-kanji --char --han-viet [--on] [--kun] --vi` | Thêm kanji, hộp 1. |
 | `add-grammar --pattern --vi` | Thêm điểm ngữ pháp, hộp 1. |

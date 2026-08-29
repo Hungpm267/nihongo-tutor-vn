@@ -304,6 +304,51 @@ def cmd_review(args):
          "last_reviewed": item["last_reviewed"]})
 
 
+def cmd_mark_taught(args):
+    """Chế độ dạy lại: giảng đúng → +1 hộp và taught=true; sai cốt lõi → hộp 1."""
+    path = progress_path()
+    data = load(path)
+    coll, item = find_item(data, args.jp)
+    if item is None:
+        raise ProgressError(f"Không tìm thấy mục: {args.jp!r}")
+    old = int(item.get("box", 1))
+    if args.result == "good":
+        new = min(old + 1, 5)
+        item["taught"] = True
+    elif args.result == "partial":
+        new = old
+    else:  # wrong
+        new = 1
+        item["taught"] = False
+    item["box"] = new
+    item["last_reviewed"] = current_session(data)
+    save(path, data)
+    out({"type": coll, "key": args.jp, "result": args.result,
+         "box_before": old, "box_after": new,
+         "taught": item.get("taught", False),
+         "last_reviewed": item["last_reviewed"]})
+
+
+def cmd_teachable(args):
+    """Gợi ý chủ đề dạy lại: mục hộp >= min-box, ưu tiên chưa từng được giảng."""
+    data = load(progress_path())
+    items = []
+    for coll, field, _ in COLLECTIONS:
+        for item in data.get(coll, []):
+            if int(item.get("box", 1)) >= args.min_box:
+                items.append(item_view(coll, item))
+    items.sort(key=lambda x: (bool(x.get("taught")), -x["box"]))
+    recent = [s for s in data.get("sessions", []) if not s.get("summary")][-5:]
+    recent_grammar = []
+    for s_ in recent:
+        for it in s_.get("new_items", []) or []:
+            if any(g.get("pattern") == it for g in data.get("grammar", [])):
+                recent_grammar.append(it)
+    out({"session": current_session(data),
+         "candidates": items[:args.n],
+         "recent_grammar": recent_grammar})
+
+
 def _add(args, coll, key_field, item):
     path = progress_path()
     data = load(path)
@@ -700,6 +745,16 @@ def build_parser():
     s.add_argument("--rule", default="standard", choices=["standard", "gentle"],
                    help="gentle = ôn tổng hợp: sai ở hộp 4–5 tụt về hộp 3")
     s.set_defaults(fn=cmd_review)
+
+    s = sub.add_parser("mark-taught", help="chế độ dạy lại: ghi kết quả giảng một mục")
+    s.add_argument("--jp", required=True, help="từ / kanji / mẫu ngữ pháp")
+    s.add_argument("--result", required=True, choices=["good", "partial", "wrong"])
+    s.set_defaults(fn=cmd_mark_taught)
+
+    s = sub.add_parser("teachable", help="gợi ý chủ đề để người dùng dạy lại")
+    s.add_argument("--min-box", dest="min_box", type=int, default=3)
+    s.add_argument("--n", type=int, default=8)
+    s.set_defaults(fn=cmd_teachable)
 
     s = sub.add_parser("add", help="thêm từ vựng mới (hộp 1)")
     s.add_argument("--jp", required=True)

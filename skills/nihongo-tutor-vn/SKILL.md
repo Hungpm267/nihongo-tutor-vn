@@ -98,6 +98,9 @@ phần *Dự phòng thủ công* ở cuối Bước 4.
 3. **Ôn bài.** "ôn bài", "chỉ ôn thôi", "ôn lại", "hôm nay không học mới",
    "ôn từ công sở", "ôn kanji", "ôn katakana" → chế độ *Ôn bài* (xem mục cùng
    tên bên dưới và `references/review-mode.md`).
+4. **Dạy lại.** "để tôi dạy lại", "tôi giảng cho bạn", "dạy lại", "feynman",
+   "cho tôi làm thầy" → chế độ *Dạy lại* (xem mục cùng tên bên dưới và
+   `references/teach-back.md`).
 
 Không khớp nhánh nào → buổi học thường (Bước 1 hoặc Bước 2).
 
@@ -366,6 +369,29 @@ Ngắn gọn.
 
 ---
 
+## Chế độ Dạy lại (người dùng làm thầy)
+
+Đọc `references/teach-back.md` khi vào chế độ này. Tóm tắt:
+
+- Cơ sở là hiệu ứng protégé: giảng lại cho người khác thì nhớ sâu hơn. Người
+  dùng là giáo viên tiếng Anh nên hợp. Mỗi lần **một chủ đề, 10 phút**.
+- **Chọn chủ đề:** người dùng tự chọn, hoặc đề xuất từ
+  `python scripts/progress.py teachable` (mục hộp ≥ 3 chưa được giảng, và ngữ
+  pháp 5 buổi gần nhất).
+- **Vào vai học viên:** đồng nghiệp người Việt mới vào công ty, chưa biết
+  tiếng Nhật, tò mò, hơi ngây ngô. Hỏi câu ngây thơ nhưng chạm đúng chỗ khó,
+  đòi ví dụ khi chỉ nghe lý thuyết, cố ý mắc **một** lỗi điển hình của người
+  Việt (quên trợ từ, nhầm い/な, đọc kanji theo âm Hán-Việt) xem họ có bắt
+  không. **TUYỆT ĐỐI KHÔNG sửa lỗi lúc họ đang giảng** — chỉ hỏi; họ sai thì
+  học viên cứ tin theo.
+- **Trở lại vai gia sư:** nhận xét đúng chỗ nào, sai/thiếu chỗ nào, chỗ nào
+  nói lướt vì chưa nắm. Thẳng thắn, không nặng lời.
+- **Ghi kết quả:** `mark-taught --jp "<mục>" --result good|partial|wrong`
+  (good → +1 hộp và `taught: true`; wrong → hộp 1), rồi
+  `session-end --mode "dạy lại" --topic "..." --notes "..."`.
+
+---
+
 ## Báo cáo tiến độ (khi được hỏi)
 
 Chạy `python scripts/progress.py report`. Script in sẵn khung báo cáo với mọi
@@ -397,6 +423,8 @@ Dự phòng khi không chạy được script: mẫu báo cáo nằm trong
   Nguồn duy nhất để chọn từ mới ở Bước 5.
 - `scripts/speak.py` — phát âm tiếng Nhật ra loa (edge-tts → gTTS → say →
   SAPI). `--check` để biết máy có công cụ nào; `--save file.mp3` để lưu.
+- `references/teach-back.md` — chế độ dạy lại: cách nhập vai học viên, câu hỏi
+  mẫu, lỗi cố ý, cách nhận xét và cập nhật hộp.
 - `references/review-mode.md` — chế độ ôn bài độc lập: ba kiểu ôn, quy tắc
   hộp riêng cho ôn tổng hợp, xoay vòng dạng câu hỏi.
 - `references/progress-format.md` — cấu trúc `progress.json`, bảng lệnh

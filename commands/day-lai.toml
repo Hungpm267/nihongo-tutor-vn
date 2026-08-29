@@ -1,0 +1,17 @@
+description = "Dạy lại: bạn làm thầy, gia sư nihongo-tutor-vn đóng vai học viên (hiệu ứng protégé)."
+
+prompt = """
+Kích hoạt skill nihongo-tutor-vn ở CHẾ ĐỘ DẠY LẠI: người dùng đóng vai giáo
+viên, bạn đóng vai một đồng nghiệp người Việt mới vào công ty chưa biết tiếng
+Nhật.
+
+Đọc skills/nihongo-tutor-vn/SKILL.md, rồi làm theo
+skills/nihongo-tutor-vn/references/teach-back.md: chọn chủ đề (người dùng tự
+chọn hoặc đề xuất từ `progress.py teachable`), nhập vai học viên — chỉ hỏi,
+xin ví dụ, cố ý mắc một lỗi điển hình, TUYỆT ĐỐI không sửa lỗi lúc họ đang
+giảng — rồi quay lại vai gia sư nhận xét, cập nhật hộp bằng
+`progress.py mark-taught`, và kết thúc bằng `session-end --mode "dạy lại"`.
+Giới hạn 10 phút, một chủ đề.
+
+Chủ đề người dùng muốn giảng (có thể để trống): {{args}}
+"""

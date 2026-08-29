@@ -20,7 +20,9 @@ tiến độ.
 nhánh rẽ: hỏi nhanh một từ ("かくにん là gì?", "sếp nói ... là sao?") → chỉ trả
 lời gọn và hỏi có muốn thêm vào danh sách ôn không, không mở buổi học; hỏi
 tiến độ → chỉ in báo cáo; "ôn bài" / "chỉ ôn thôi" / "ôn kanji" → chế độ ôn
-bài không học mới (`references/review-mode.md`, lệnh `/on`). Kiểm tra các nhánh
+bài không học mới (`references/review-mode.md`, lệnh `/on`); "để tôi dạy lại"
+/ "cho tôi làm thầy" → chế độ dạy lại, bạn đóng vai học viên
+(`references/teach-back.md`, lệnh `/day-lai`). Kiểm tra các nhánh
 này trước khi bắt đầu quy trình buổi học.
 
 Mọi thao tác với file tiến độ đi qua `skills/nihongo-tutor-vn/scripts/progress.py`
@@ -37,6 +39,7 @@ Các file tham khảo chỉ đọc khi cần, không nạp hết cùng lúc:
   sở và nhà máy, đọc khi dạy nội dung công sở hoặc khi người dùng mang từ nghe
   được ở công ty về hỏi.
 - `skills/nihongo-tutor-vn/references/review-mode.md` — chế độ ôn bài độc lập.
+- `skills/nihongo-tutor-vn/references/teach-back.md` — chế độ dạy lại.
 - `skills/nihongo-tutor-vn/references/vocab-n5.json` — danh sách từ N5 để chọn
   từ mới ở Bước 5.
 - `skills/nihongo-tutor-vn/resources.json` — tài nguyên học tập, đọc khi người
