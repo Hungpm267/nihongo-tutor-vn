@@ -19,8 +19,13 @@ tiến độ.
 **Không phải tin nhắn nào cũng là một buổi học.** Bước 0 của SKILL.md có các
 nhánh rẽ: hỏi nhanh một từ ("かくにん là gì?", "sếp nói ... là sao?") → chỉ trả
 lời gọn và hỏi có muốn thêm vào danh sách ôn không, không mở buổi học; hỏi
-tiến độ → chỉ in báo cáo. Kiểm tra các nhánh này trước khi bắt đầu quy trình
-buổi học.
+tiến độ → chỉ in báo cáo; "ôn bài" / "chỉ ôn thôi" / "ôn kanji" → chế độ ôn
+bài không học mới (`references/review-mode.md`, lệnh `/on`). Kiểm tra các nhánh
+này trước khi bắt đầu quy trình buổi học.
+
+Mọi thao tác với file tiến độ đi qua `skills/nihongo-tutor-vn/scripts/progress.py`
+(xem `references/progress-format.md`); phát âm bằng `scripts/speak.py` khi
+`profile.tts` bật.
 
 Các file tham khảo chỉ đọc khi cần, không nạp hết cùng lúc:
 
@@ -31,6 +36,9 @@ Các file tham khảo chỉ đọc khi cần, không nạp hết cùng lúc:
 - `skills/nihongo-tutor-vn/references/workplace-japanese.md` — tiếng Nhật công
   sở và nhà máy, đọc khi dạy nội dung công sở hoặc khi người dùng mang từ nghe
   được ở công ty về hỏi.
+- `skills/nihongo-tutor-vn/references/review-mode.md` — chế độ ôn bài độc lập.
+- `skills/nihongo-tutor-vn/references/vocab-n5.json` — danh sách từ N5 để chọn
+  từ mới ở Bước 5.
 - `skills/nihongo-tutor-vn/resources.json` — tài nguyên học tập, đọc khi người
   dùng hỏi nên học thêm ở đâu hoặc khi giao bài nghe.
 

@@ -47,6 +47,8 @@ VOCAB_MILESTONES = (25, 50, 100, 200)
 KANJI_MILESTONES = (10, 25, 50)
 COMPRESS_THRESHOLD = 40   # số bản ghi sessions tối đa trước khi nén
 COMPRESS_KEEP = 30        # giữ lại chừng này buổi gần nhất
+TONG_HOP_EVERY = 7        # gợi ý ôn tổng hợp mỗi chừng này buổi
+GENTLE_FLOOR = 3          # ôn tổng hợp: sai ở hộp 4–5 chỉ tụt về hộp này
 
 # (tên collection, tên trường khóa, nhãn tiếng Việt)
 COLLECTIONS = (
@@ -229,7 +231,53 @@ def cmd_due(args):
         "total_due": total,
         "shown": len(items),
         "remaining": total - len(items),
+        "suggest_tong_hop": cur % TONG_HOP_EVERY == 0,
         "items": items,
+    })
+
+
+def cmd_sample(args):
+    """Bốc ngẫu nhiên n mục từ mọi hộp, xen kẽ loại; lọc theo topic/type."""
+    data = load(progress_path())
+    types = set(args.type or [])
+    want_kana = not types or types & {"kana", "hiragana", "katakana"}
+    groups = {}
+    for coll, field, _ in COLLECTIONS:
+        if types and coll not in types:
+            continue
+        for item in data.get(coll, []):
+            if int(item.get("box", 1)) < args.min_box:
+                continue
+            if args.topic and (item.get("topic") or "").lower() != args.topic.lower():
+                continue
+            groups.setdefault(coll, []).append(item_view(coll, item))
+    if want_kana and not args.topic and args.min_box <= 1:
+        for kind in ("hiragana", "katakana"):
+            if types and not types & {"kana", kind}:
+                continue
+            for ch in data.get("kana", {}).get(f"{kind}_learned", []):
+                groups.setdefault("kana", []).append(
+                    {"type": "kana", "kind": kind, "key": ch, "box": None})
+    rng = random.Random(args.seed)
+    for g in groups.values():
+        rng.shuffle(g)
+    # xen kẽ: lấy vòng tròn mỗi loại một mục cho tới đủ n
+    order = sorted(groups)
+    rng.shuffle(order)
+    picked = []
+    while len(picked) < args.n and any(groups.values()):
+        for t in order:
+            if groups.get(t):
+                picked.append(groups[t].pop())
+                if len(picked) >= args.n:
+                    break
+    out({
+        "session": current_session(data),
+        "requested": args.n,
+        "available": len(picked) + sum(len(g) for g in groups.values()),
+        "filters": {"min_box": args.min_box, "topic": args.topic,
+                    "type": sorted(types) or None},
+        "items": picked,
     })
 
 
@@ -244,12 +292,14 @@ def cmd_review(args):
         new = min(old + 1, 5)
     elif args.result == "hesitant":
         new = old
+    elif args.rule == "gentle" and old >= 4:
+        new = GENTLE_FLOOR   # ôn tổng hợp: một lần quên không phạt về 1
     else:  # wrong
         new = 1
     item["box"] = new
     item["last_reviewed"] = current_session(data)
     save(path, data)
-    out({"type": coll, "key": args.jp, "result": args.result,
+    out({"type": coll, "key": args.jp, "result": args.result, "rule": args.rule,
          "box_before": old, "box_after": new,
          "last_reviewed": item["last_reviewed"]})
 
@@ -634,10 +684,21 @@ def build_parser():
                    help="toàn bộ hàng đợi, không giới hạn số mục")
     s.set_defaults(fn=cmd_due)
 
+    s = sub.add_parser("sample", help="bốc ngẫu nhiên mục từ mọi hộp (ôn tổng hợp / theo chủ đề)")
+    s.add_argument("--n", type=int, default=12, help="số mục (mặc định 12)")
+    s.add_argument("--min-box", dest="min_box", type=int, default=1)
+    s.add_argument("--topic", default=None, help="lọc theo topic, ví dụ 'công sở'")
+    s.add_argument("--type", nargs="*", default=None,
+                   help="vocabulary kanji grammar kana hiragana katakana")
+    s.add_argument("--seed", type=int, default=None, help="cố định ngẫu nhiên (kiểm thử)")
+    s.set_defaults(fn=cmd_sample)
+
     s = sub.add_parser("review", help="ghi kết quả ôn một mục")
     s.add_argument("--jp", required=True, help="từ / kanji / mẫu ngữ pháp")
     s.add_argument("--result", required=True,
                    choices=["correct", "hesitant", "wrong"])
+    s.add_argument("--rule", default="standard", choices=["standard", "gentle"],
+                   help="gentle = ôn tổng hợp: sai ở hộp 4–5 tụt về hộp 3")
     s.set_defaults(fn=cmd_review)
 
     s = sub.add_parser("add", help="thêm từ vựng mới (hộp 1)")

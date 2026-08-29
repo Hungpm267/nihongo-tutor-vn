@@ -95,6 +95,9 @@ phần *Dự phòng thủ công* ở cuối Bước 4.
    hỏi thêm.
 2. **Báo cáo tiến độ.** Tin nhắn chứa "tiến độ", "thống kê", "báo cáo", "học
    tới đâu rồi", "dashboard" → chạy Báo cáo tiến độ.
+3. **Ôn bài.** "ôn bài", "chỉ ôn thôi", "ôn lại", "hôm nay không học mới",
+   "ôn từ công sở", "ôn kanji", "ôn katakana" → chế độ *Ôn bài* (xem mục cùng
+   tên bên dưới và `references/review-mode.md`).
 
 Không khớp nhánh nào → buổi học thường (Bước 1 hoặc Bước 2).
 
@@ -341,6 +344,28 @@ Ngắn gọn.
 
 ---
 
+## Chế độ Ôn bài (không học mới)
+
+Đọc `references/review-mode.md` khi vào chế độ này. Tóm tắt:
+
+- Không dạy nội dung mới, không bắt buộc thu hoạch (vẫn nhận nếu người dùng
+  tự đưa). Buổi ôn vẫn kết thúc bằng `session-end --mode ôn` và vẫn đếm là
+  một buổi — Leitner tính theo số buổi.
+- Ba kiểu, hỏi người dùng hoặc chọn theo ngữ cảnh:
+  - **Đến hạn** — `due --mode chuan --all`: toàn bộ hàng đợi, không giới hạn
+    5/8. Dùng khi tồn đọng nhiều sau kỳ nghỉ. Sai → hộp 1.
+  - **Tổng hợp** — `sample --n 12`: ngẫu nhiên từ mọi hộp kể cả hộp 5, xen kẽ
+    kana/từ/kanji/ngữ pháp. Chấm bằng `review ... --rule gentle` (sai ở hộp
+    4–5 tụt về 3). Đề xuất kiểu này khi `due` trả `suggest_tong_hop: true`
+    (mỗi 7 buổi).
+  - **Theo chủ đề** — `sample --n 10 --topic "công sở"` hoặc
+    `--type kanji|katakana|vocabulary|grammar`.
+- Dạng câu hỏi xen kẽ, không lặp hai lần liên tiếp: nghĩa → cách đọc → đặt
+  câu → dịch ngược → nghe (chỉ khi TTS bật: phát âm, không hiện chữ, hỏi nghe
+  được từ gì).
+
+---
+
 ## Báo cáo tiến độ (khi được hỏi)
 
 Chạy `python scripts/progress.py report`. Script in sẵn khung báo cáo với mọi
@@ -372,6 +397,8 @@ Dự phòng khi không chạy được script: mẫu báo cáo nằm trong
   Nguồn duy nhất để chọn từ mới ở Bước 5.
 - `scripts/speak.py` — phát âm tiếng Nhật ra loa (edge-tts → gTTS → say →
   SAPI). `--check` để biết máy có công cụ nào; `--save file.mp3` để lưu.
+- `references/review-mode.md` — chế độ ôn bài độc lập: ba kiểu ôn, quy tắc
+  hộp riêng cho ôn tổng hợp, xoay vòng dạng câu hỏi.
 - `references/progress-format.md` — cấu trúc `progress.json`, bảng lệnh
   `scripts/progress.py`, mẫu báo cáo. Đọc khi cần sửa file bằng tay hoặc khi
   script báo lỗi cấu trúc.

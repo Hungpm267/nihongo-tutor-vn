@@ -1,0 +1,15 @@
+description = "Ôn bài với gia sư nihongo-tutor-vn — chỉ ôn, không học nội dung mới."
+
+prompt = """
+Kích hoạt skill nihongo-tutor-vn ở CHẾ ĐỘ ÔN BÀI (không dạy nội dung mới,
+không bắt buộc bước thu hoạch).
+
+Đọc skills/nihongo-tutor-vn/SKILL.md, rồi làm theo
+skills/nihongo-tutor-vn/references/review-mode.md: kiểm tra tiến độ bằng
+scripts/progress.py, hỏi người dùng muốn ôn kiểu nào (đến hạn / tổng hợp /
+theo chủ đề) hoặc tự chọn theo ngữ cảnh, xen kẽ dạng câu hỏi, ghi kết quả từng
+mục bằng `progress.py review`, và kết thúc bằng `session-end --mode ôn`.
+
+Yêu cầu thêm của người dùng (có thể để trống, ví dụ "ôn kanji", "ôn từ công
+sở"): {{args}}
+"""
