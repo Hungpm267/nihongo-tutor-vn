@@ -50,15 +50,25 @@ nihongo-tutor-vn/
 ├── gemini-extension.json         # Manifest cho Gemini CLI
 ├── GEMINI.md                     # Context nạp vào Gemini CLI
 ├── commands/
-│   └── nihongo.toml              # Lệnh /nihongo cho Gemini CLI
+│   ├── nihongo.toml              # /nihongo — buổi học thường (Gemini CLI)
+│   ├── on.toml                   # /on — ôn bài, không học mới
+│   └── day-lai.toml              # /day-lai — bạn làm thầy, AI làm học viên
 ├── skills/
 │   └── nihongo-tutor-vn/         # Nội dung dùng chung cho cả hai công cụ
-│       ├── SKILL.md              # Hướng dẫn chính
+│       ├── SKILL.md              # Hướng dẫn chính (giữ dưới 500 dòng)
 │       ├── resources.json        # Tài nguyên học, có nguồn tiếng Việt
+│       ├── scripts/
+│       │   ├── progress.py       # Toàn bộ thao tác với progress.json
+│       │   ├── speak.py          # Phát âm tiếng Nhật (TTS)
+│       │   └── test_progress.py  # Kiểm thử progress.py trên file tạm
 │       └── references/
-│           ├── roadmap.md
-│           ├── kanji-hanviet.md
-│           └── workplace-japanese.md
+│           ├── roadmap.md            # Lộ trình 4 giai đoạn
+│           ├── kanji-hanviet.md      # Dạy kanji qua âm Hán-Việt
+│           ├── workplace-japanese.md # Tiếng Nhật công sở, nhà máy, IT
+│           ├── vocab-n5.json         # 509 từ N5 có Hán-Việt, topic, priority
+│           ├── review-mode.md        # Chế độ ôn bài độc lập
+│           ├── teach-back.md         # Chế độ dạy lại
+│           └── progress-format.md    # Cấu trúc progress.json, bảng lệnh
 ├── LICENSE
 └── README.md
 ```
@@ -106,6 +116,8 @@ học tiếng Nhật
 hôm nay tôi chỉ có 10 phút thôi
 tiến độ tới đâu rồi
 hôm nay sếp nói "かくにん" là gì vậy?
+ôn bài thôi, không học mới
+để tôi dạy lại cho bạn
 ```
 
 ---
@@ -143,6 +155,8 @@ nhật bản sao đó.
 ```
 /nihongo
 /nihongo hôm nay chỉ có 10 phút
+/on kanji
+/day-lai は và が
 ```
 
 Hoặc nói tự nhiên như với Claude Code — `GEMINI.md` đã hướng dẫn model tự kích
@@ -183,6 +197,29 @@ trình tự:
 5. **Hội thoại và luyện nghe** (bỏ qua ở chế độ 10 phút).
 6. **Bài tập và lưu tiến độ**.
 
+### Các chế độ
+
+Skill nhìn câu đầu tiên của bạn để quyết định làm gì. Không khớp gì thì mở
+buổi học thường.
+
+| Chế độ | Câu kích hoạt | Làm gì |
+|---|---|---|
+| **Buổi học thường — Nhanh** (~10 phút) | `học tiếng Nhật`, `hôm nay chỉ có 10 phút` | Ôn Leitner (≤5 mục) + 3 mục mới. Bỏ hội thoại, bài tập. |
+| **Buổi học thường — Chuẩn** (~25 phút) | `học tiếng Nhật` rồi trả lời "25 phút" (mặc định) | Ôn (≤8 mục) + 5 mục mới + 1 ngữ pháp + hội thoại + 5 câu bài tập. |
+| **Buổi học thường — Sâu** (~50 phút) | `hôm nay có 50 phút` | Như Chuẩn + shadowing (phát âm nếu bật TTS) + 10 câu + một mảng từ công sở. |
+| **Tra cứu nhanh** | `かくにん là gì?`, `sếp nói "yoroshiku" là sao?`, `安全 đọc thế nào?` | Trả lời gọn: nghĩa, cách đọc, Hán-Việt, một ví dụ, ngữ cảnh công ty. Hỏi có thêm vào ôn tập không. **Không** mở buổi học. |
+| **Ôn bài — đến hạn** | `ôn bài`, `chỉ ôn thôi`, `hôm nay không học mới` | Toàn bộ hàng đợi Leitner, không giới hạn. Dùng sau kỳ nghỉ dài. |
+| **Ôn bài — tổng hợp** | `ôn tổng hợp` (skill tự đề xuất mỗi 7 buổi) | 10–15 mục ngẫu nhiên từ mọi hộp kể cả hộp 5, xen kẽ kana/từ/kanji/ngữ pháp. Sai ở hộp 4–5 chỉ tụt về 3. |
+| **Ôn bài — theo chủ đề** | `ôn từ công sở`, `ôn kanji`, `ôn katakana` | Lọc theo topic hoặc loại. |
+| **Dạy lại** | `để tôi dạy lại`, `tôi giảng cho bạn`, `dạy lại`, `feynman`, `cho tôi làm thầy` | Bạn làm thầy, AI làm đồng nghiệp mới chưa biết tiếng Nhật: hỏi, đòi ví dụ, cố ý sai một lỗi. Không sửa bạn lúc đang giảng — nhận xét sau. Giảng đúng thì lên hộp. |
+| **Báo cáo tiến độ** | `tiến độ tới đâu rồi`, `thống kê` | Bảng tổng kết, không có streak. |
+
+Trong buổi học, gõ `gợi ý` bất cứ lúc nào giữa hội thoại để xin trợ giúp (skill
+cho một mẫu câu, không cho luôn đáp án).
+
+Buổi ôn và buổi dạy lại **vẫn đếm là một buổi** — khoảng cách Leitner tính
+theo số buổi nên chúng phải đếm.
+
 ### Mấy câu đáng thuộc
 
 | Gõ gì | Kết quả |
@@ -191,7 +228,10 @@ trình tự:
 | `hôm nay chỉ có 10 phút` | Chạy chế độ Nhanh |
 | `tiến độ tới đâu rồi` | Hiện bảng tổng kết |
 | `gợi ý` | Xin trợ giúp giữa hội thoại (không cho luôn đáp án) |
-| `hôm nay sếp nói かくにん là gì vậy?` | Hỏi từ bất kỳ lúc nào, không cần đang học |
+| `hôm nay sếp nói かくにん là gì vậy?` | Tra cứu nhanh, không mở buổi học |
+| `ôn bài` / `chỉ ôn thôi` | Ôn đến hạn, không học mới |
+| `ôn từ công sở` / `ôn kanji` / `ôn katakana` | Ôn theo chủ đề hoặc loại |
+| `để tôi dạy lại` / `cho tôi làm thầy` | Bạn giảng, AI làm học viên |
 
 ### Dùng chung tiến độ giữa hai công cụ
 
@@ -253,6 +293,80 @@ không có nhưng không cần.
 
 ---
 
+## Scripts
+
+Hai script trong `skills/nihongo-tutor-vn/scripts/`, Python 3, chỉ dùng thư
+viện chuẩn (trừ TTS, xem mục trên). Skill gọi chúng thay vì tự tính toán —
+với vài trăm từ vựng, để model tự đếm khoảng cách Leitner là chắc chắn sai.
+
+**`progress.py`** — mọi thao tác với `~/.nihongo-tutor/progress.json` (ghi đè
+đường dẫn bằng biến môi trường `NIHONGO_PROGRESS`). Ghi atomic qua file tạm,
+nên ngắt giữa chừng không để lại file hỏng.
+
+```bash
+S=skills/nihongo-tutor-vn/scripts
+python $S/progress.py init --name "Hùng" --romaji true --tts true --goals "..."
+python $S/progress.py due --mode chuan            # hàng đợi ôn (thêm --all để bỏ giới hạn)
+python $S/progress.py review --jp 確認 --result correct   # hesitant | wrong; --rule gentle
+python $S/progress.py sample --n 12 --topic "công sở"     # ôn tổng hợp / theo chủ đề
+python $S/progress.py mark-taught --jp 確認 --result good # chế độ dạy lại
+python $S/progress.py session-end --mode chuẩn --score 4/5 --notes "..."
+python $S/progress.py report
+python $S/progress.py validate
+python $S/test_progress.py                        # chạy 39 kiểm thử trên file tạm
+```
+
+Bảng lệnh đầy đủ: `skills/nihongo-tutor-vn/references/progress-format.md`.
+
+**`speak.py`** — phát âm, xem mục *Bật phát âm*.
+
+Trên Windows, nếu output tiếng Nhật bị lỗi mã hóa khi đi qua pipe, đặt
+`PYTHONUTF8=1`.
+
+---
+
+## Nhật ký nâng cấp
+
+Sáu mục làm ngày 2026-08-29, mỗi mục một commit.
+
+**1. Tra cứu nhanh.** README hứa "hỏi từ bất kỳ lúc nào" nhưng SKILL.md không
+có nhánh xử lý, nên "かくにん là gì" sẽ kích hoạt nguyên một buổi học. Thêm
+nhánh vào Bước 0: trả lời gọn (nghĩa, cách đọc, Hán-Việt, ví dụ, ngữ cảnh công
+ty), hỏi có thêm vào ôn tập không (`source: "lookup"`), không mở buổi học.
+
+**2. Tính toán ôn tập bằng code.** Trước đây model phải tự so `session −
+last_reviewed` với khoảng cách từng hộp trên toàn bộ danh sách — với vài trăm
+mục sẽ bỏ sót, và ghi tay JSON có thể làm hỏng file. Viết `progress.py` (init,
+due, review, add, add-kanji, add-grammar, add-kana, set, notes, session-end,
+report, validate), ghi atomic; SKILL.md gọi script ở Bước 0/1/2/4/7 và Báo
+cáo, giữ đoạn dự phòng thủ công. Định dạng file chuyển sang
+`references/progress-format.md` để SKILL.md gọn.
+
+**3. Phát âm (TTS).** Skill thuần văn bản dù máy phát được. Viết `speak.py`
+(edge-tts → gTTS → say → SAPI, phát bằng afplay/mpv/ffplay/PowerShell); Bước 1
+hỏi bật phát âm (`profile.tts`), Bước 5 phát sau mỗi từ mới, Bước 6 phát bản
+shadowing; lỗi thì im lặng. Đã thử thật: edge-tts chạy được trên Windows.
+
+**4. Danh sách từ N5 chuẩn.** Model tự nghĩ từ mới mỗi buổi nên lệch tần suất
+và lạc khỏi N5. Thêm `references/vocab-n5.json` (509 từ, có `han_viet`,
+`topic`, `priority`, nhóm công sở lấy từ `workplace-japanese.md`); Bước 5 chọn
+từ đó, bỏ từ đã có, priority thấp trước, xoay vòng topic. Từ thu hoạch ở công
+ty vẫn được chèn ngoài danh sách.
+
+**5. Ôn bài độc lập.** Ôn chỉ tồn tại bên trong buổi học đầy đủ. Thêm chế độ
+riêng với ba kiểu (đến hạn `due --all`, tổng hợp `sample` + quy tắc hộp nhẹ
+`--rule gentle`, theo chủ đề `--topic/--type`), xoay vòng năm dạng câu hỏi
+kể cả nghe qua TTS, gợi ý tổng hợp mỗi 7 buổi. Chi tiết ở
+`references/review-mode.md`; `/on` cho Gemini CLI.
+
+**6. Dạy lại.** Tính năng mới: người dùng giảng, AI đóng vai đồng nghiệp mới
+chưa biết tiếng Nhật — hỏi chạm chỗ khó, đòi ví dụ, cố ý mắc một lỗi điển hình
+của người Việt, tuyệt đối không sửa lúc đang giảng; sau đó quay lại vai gia sư
+nhận xét. `mark-taught` cập nhật hộp (`taught: true`). Chi tiết ở
+`references/teach-back.md`; `/day-lai` cho Gemini CLI.
+
+---
+
 ## Dùng trên giao diện chat web hoặc app
 
 Tải `skills/nihongo-tutor-vn/SKILL.md` lên đầu cuộc trò chuyện, kèm các file
@@ -267,8 +381,9 @@ tự lưu**. Cuối mỗi buổi hãy xin file `progress.json` để tải về,
 ## Tiến độ học tập
 
 Lưu ở `~/.nihongo-tutor/progress.json`, định dạng JSON để sau này có thể đọc
-bằng chương trình nếu bạn muốn tự viết app học tiếng Nhật. Xem cấu trúc đầy đủ
-ở cuối `skills/nihongo-tutor-vn/SKILL.md`.
+bằng chương trình nếu bạn muốn tự viết app học tiếng Nhật. Mọi thao tác ghi đi
+qua `scripts/progress.py`; cấu trúc đầy đủ ở
+`skills/nihongo-tutor-vn/references/progress-format.md`.
 
 File `.gitignore` đã loại `progress.json` ra khỏi repo — đây là dữ liệu học tập
 cá nhân, không nên đẩy lên GitHub.

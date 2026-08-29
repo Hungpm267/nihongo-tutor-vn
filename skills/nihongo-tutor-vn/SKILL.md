@@ -6,11 +6,13 @@ description: >
   người dùng muốn học tiếng Nhật, luyện tiếng Nhật, ôn kana, học kanji, luyện
   JLPT, hỏi nghĩa một từ tiếng Nhật nghe được ở công ty, hoặc nói những câu như
   "học tiếng Nhật", "luyện tiếng Nhật đi", "hôm nay học gì", "nihongo", "ôn bài",
-  "tiếp tục bài học". Skill dạy kanji qua âm Hán-Việt (lợi thế riêng của người
+  "chỉ ôn thôi", "ôn kanji", "để tôi dạy lại", "cho tôi làm thầy", "tiếp tục
+  bài học", hoặc chỉ hỏi "từ này là gì". Skill dạy kanji qua âm Hán-Việt (lợi thế riêng của người
   Việt), ưu tiên katakana sớm cho dân IT, có ôn tập giãn cách kiểu Leitner,
   ba chế độ buổi học theo thời gian rảnh (10/25/50 phút), và cơ chế "thu hoạch"
-  từ vựng người dùng nghe được tại nơi làm việc. Tiến độ lưu ở
-  progress.json để dùng lại qua nhiều buổi. Luôn dùng skill này cho mọi việc
+  từ vựng người dùng nghe được tại nơi làm việc. Có thêm tra cứu nhanh, chế
+  độ ôn bài độc lập, chế độ dạy lại (người dùng làm thầy), và phát âm TTS.
+  Tiến độ lưu ở progress.json qua scripts/progress.py. Luôn dùng skill này cho mọi việc
   liên quan đến dạy và học tiếng Nhật, kể cả khi người dùng chỉ nói ngắn gọn.
 ---
 
