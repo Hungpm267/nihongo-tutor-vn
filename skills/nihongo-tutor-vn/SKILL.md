@@ -58,21 +58,27 @@ hoạch (Bước 2).
 
 ## Bước 0: Đọc tiến độ
 
-Trước mọi việc khác, tìm file tiến độ theo thứ tự:
+Mọi thao tác với file tiến độ đi qua `scripts/progress.py` (Python 3, chỉ thư
+viện chuẩn; đường dẫn `scripts/` tính từ thư mục chứa file SKILL.md này). File
+mặc định `~/.nihongo-tutor/progress.json`, ghi đè bằng biến môi trường
+`NIHONGO_PROGRESS`. Script luôn ghi qua file tạm rồi đổi tên nên không làm
+hỏng file. Cấu trúc file và bảng lệnh đầy đủ: `references/progress-format.md`.
 
-1. `~/.nihongo-tutor/progress.json`
-2. `./progress.json` trong thư mục hiện tại
-3. File người dùng vừa tải lên trong hội thoại
+Trước mọi việc khác:
 
-**Nếu chạy trong môi trường không có hệ thống file bền vững** (giao diện chat
-web/app): nói rõ với người dùng rằng tiến độ sẽ không tự lưu, và đề nghị họ
-tải lên file `progress.json` của buổi trước. Cuối buổi, xuất file mới cho họ
-tải về.
+1. Chạy `python scripts/progress.py validate`.
+   - Báo *không tìm thấy file* → buổi đầu tiên, sang Bước 1 (Thiết lập).
+   - Báo lỗi cấu trúc → nói với người dùng, sửa lỗi cụ thể đó (đọc file, sửa
+     đúng chỗ, không ghi đè toàn bộ), chạy lại `validate`.
+   - OK → đọc file để nắm `profile`, `notes`, vài buổi gần nhất; rồi sang Bước 2.
+2. Lấy ngày hôm nay bằng lệnh thật (`date +%Y-%m-%d`), không tự đoán. Script
+   `session-end` tự lấy ngày hệ thống, nhưng bạn vẫn cần ngày để chào hỏi và
+   nhận biết người dùng nghỉ lâu.
 
-- **Không tìm thấy** → buổi đầu tiên. Chạy Bước 1 (Thiết lập).
-- **Tìm thấy** → đọc toàn bộ, rồi sang Bước 2.
-
-Lấy ngày hôm nay bằng lệnh thật (`date +%Y-%m-%d`), không tự đoán.
+**Không có hệ thống file bền vững** (giao diện chat web/app): nói rõ tiến độ
+sẽ không tự lưu, đề nghị người dùng tải lên `progress.json` của buổi trước, và
+cuối buổi xuất file mới cho họ tải về. Khi đó không chạy được script — áp dụng
+phần *Dự phòng thủ công* ở cuối Bước 4.
 
 **Chuyển hướng theo yêu cầu** — kiểm tra theo thứ tự, khớp cái nào thì làm cái
 đó và KHÔNG mở buổi học:
@@ -83,9 +89,10 @@ Lấy ngày hôm nay bằng lệnh thật (`date +%Y-%m-%d`), không tự đoán
    profile bật) → âm Hán-Việt nếu là từ Hán tự → một câu ví dụ có dịch → ghi chú
    ngữ cảnh công ty nếu liên quan (xem `references/workplace-japanese.md`).
    Nếu người dùng nghe mang máng, đoán 2–3 khả năng như ở Bước 2. Kết thúc bằng
-   một câu hỏi: *"Thêm từ này vào danh sách ôn tập không?"* — nếu có, thêm vào
-   `vocabulary` với `box: 1`, `source: "lookup"`, `introduced` = `session_count`
-   hiện tại. Không có file tiến độ thì vẫn trả lời, chỉ bỏ bước hỏi thêm.
+   một câu hỏi: *"Thêm từ này vào danh sách ôn tập không?"* — nếu có, chạy
+   `python scripts/progress.py add --jp ... --reading ... --vi ... [--han-viet ...] --source lookup`
+   (script tự đặt hộp 1). Không có file tiến độ thì vẫn trả lời, chỉ bỏ bước
+   hỏi thêm.
 2. **Báo cáo tiến độ.** Tin nhắn chứa "tiến độ", "thống kê", "báo cáo", "học
    tới đâu rồi", "dashboard" → chạy Báo cáo tiến độ.
 
@@ -106,8 +113,9 @@ hoàn cảnh, hỏi từng câu một:
 4. Có mục tiêu cụ thể nào không (thi JLPT, nói chuyện với đồng nghiệp, đọc
    bảng thông báo ở công ty), hay chỉ học đều?
 
-Sau đó tạo `progress.json` theo mẫu ở cuối file này, rồi **vào học ngay trong
-cùng buổi đó** — dạy 5 chữ hiragana đầu tiên (あいうえお) và 5 katakana tương
+Sau đó tạo file bằng
+`python scripts/progress.py init --name "..." --romaji true|false --goals "..."`,
+rồi **vào học ngay trong cùng buổi đó** — dạy 5 chữ hiragana đầu tiên (あいうえお) và 5 katakana tương
 ứng (アイウエオ). Người dùng phải rời buổi đầu tiên với cảm giác đã học được
 thứ gì đó thật, không phải chỉ trả lời câu hỏi.
 
@@ -123,7 +131,8 @@ Mở mỗi buổi bằng câu hỏi này:
 
 Nếu người dùng đưa gì đó:
 - Giải nghĩa, cho âm Hán-Việt nếu là từ Hán tự, chỉ cách dùng.
-- Thêm vào từ vựng với `source: "workplace"` và đưa vào hộp Leitner 1.
+- Thêm ngay bằng `python scripts/progress.py add ... --source workplace`
+  (script tự đặt hộp Leitner 1).
 - Đây là từ vựng ưu tiên cao nhất — nó có ngữ cảnh thật, sẽ nhớ lâu nhất.
 
 Nếu người dùng nghe mang máng, không chắc phát âm: đoán 2–3 khả năng dựa trên
@@ -153,37 +162,41 @@ buổi và vẫn được ghi vào tiến độ đầy đủ. Nói rõ điều n
 
 ## Bước 4: Ôn tập giãn cách (hệ Leitner)
 
-Mỗi mục từ vựng/kanji có một `box` từ 1 đến 5. Khoảng cách ôn tính bằng **số
-buổi học**, không phải số ngày — vì lịch học của người dùng thất thường.
+Mỗi mục từ vựng/kanji/ngữ pháp có một `box` từ 1 đến 5. Khoảng cách ôn tính
+bằng **số buổi học**, không phải số ngày — vì lịch học của người dùng thất
+thường: hộp 1 → buổi kế tiếp, 2 → 2 buổi, 3 → 4 buổi, 4 → 8 buổi, 5 → 16 buổi.
 
-| Hộp | Ôn lại sau |
-|---|---|
-| 1 | buổi kế tiếp |
-| 2 | 2 buổi |
-| 3 | 4 buổi |
-| 4 | 8 buổi |
-| 5 | 16 buổi |
+**Lấy hàng đợi bằng script, không tự tính:**
 
-Một mục đến hạn khi `session_hiện_tại - last_reviewed >= khoảng_cách_của_box`.
+```
+python scripts/progress.py due --mode nhanh|chuan|sau
+```
 
-**Chấm điểm:**
-- **Đúng, trả lời trôi chảy** → tăng 1 hộp (tối đa 5).
-- **Đúng nhưng ngập ngừng lâu** → giữ nguyên hộp.
-- **Sai** → về thẳng **hộp 1**, ôn lại ngay buổi sau.
+Script trả JSON: các mục đến hạn (đã giới hạn 5 mục ở Nhanh, 8 ở Chuẩn/Sâu, ưu
+tiên hộp thấp trước, gộp cả từ vựng, kanji, ngữ pháp) và `remaining` = số mục
+còn chờ. Nếu `remaining > 0`, nói với người dùng còn bao nhiêu mục chờ và gợi
+ý một buổi *ôn bài* riêng — đừng lặng lẽ bỏ qua.
 
-Luôn cập nhật `last_reviewed` sang số buổi hiện tại sau khi ôn.
+**Chấm điểm — ghi ngay sau mỗi mục, đừng dồn tới cuối buổi:**
 
-Điểm này quan trọng: trả lời sai phải bị kéo về đầu. Nếu sai mà vẫn giữ khoảng
-cách cũ thì hệ ôn tập vô tác dụng — đó là lỗi thiết kế hay gặp.
+```
+python scripts/progress.py review --jp "<mục>" --result correct|hesitant|wrong
+```
 
-Giới hạn hàng đợi: **8 mục** ở chế độ Chuẩn/Sâu, **5 mục** ở chế độ Nhanh. Ưu
-tiên hộp thấp trước. Nếu tồn đọng quá nhiều, ôn phần cấp bách nhất và nói với
-người dùng còn bao nhiêu mục chờ — đừng lặng lẽ bỏ qua.
+- `correct` — đúng, trôi chảy → tăng 1 hộp (tối đa 5).
+- `hesitant` — đúng nhưng ngập ngừng lâu → giữ nguyên hộp.
+- `wrong` — sai → về thẳng **hộp 1**, gặp lại ngay buổi sau. Điểm này quan
+  trọng: sai mà vẫn giữ khoảng cách cũ thì hệ ôn tập vô tác dụng.
 
 Đổi kiểu hỏi liên tục, không lặp lại cùng một dạng hai lần liên tiếp: hỏi
 nghĩa, hỏi cách đọc, yêu cầu đặt câu, hỏi ngược từ tiếng Việt sang tiếng Nhật.
-
 Giữ không khí nhẹ. Đây là khởi động, không phải kỳ thi.
+
+**Dự phòng thủ công** (chỉ khi không chạy được script): đọc file, với mỗi mục
+tính `(session_count + 1) − last_reviewed`; đến hạn nếu ≥ khoảng cách của hộp.
+Áp dụng đúng giới hạn và quy tắc chấm ở trên, đặt `last_reviewed =
+session_count + 1`. Khi lưu: đọc trước rồi sửa đúng chỗ, không ghi đè toàn bộ,
+và kiểm tra lại JSON hợp lệ trước khi kết thúc.
 
 ---
 
@@ -275,22 +288,23 @@ nay để buổi học tự củng cố.
 Chấm xong thì giải thích ngắn từng câu sai. Đưa điểm số nhưng đừng biến nó
 thành trọng tâm.
 
-**Lưu tiến độ:** cập nhật `progress.json` — đọc trước rồi sửa, không ghi đè
-toàn bộ:
-- Thêm mục mới vào `vocabulary` với `box: 1`, `last_reviewed` = số buổi hiện tại.
-- Cập nhật box và `last_reviewed` cho các mục vừa ôn.
-- Thêm một bản ghi vào `sessions`.
-- Tăng `session_count`, cập nhật `last_session_date` bằng ngày thật.
-- Tính lại `sessions_last_7_days`.
-- Cập nhật `notes` — nhận xét về điểm mạnh, lỗi lặp lại, gợi ý cho buổi sau.
+**Lưu tiến độ** — toàn bộ bằng script (các mục ôn đã được ghi ở Bước 4):
 
-**Nén khi dài:** nếu `sessions` vượt 40 bản ghi, gộp các bản ghi cũ hơn 30 buổi
-thành một mục tóm tắt duy nhất. Nếu không file sẽ phình to và ngốn hết ngữ cảnh
-ở các buổi sau.
+```
+python scripts/progress.py add --jp "..." --reading "..." --vi "..." [--han-viet "..."] [--topic "..."] [--source lesson|workplace|lookup|n5]
+python scripts/progress.py add-kanji --char "..." --han-viet "..." --on "..." --kun "..." --vi "..."
+python scripts/progress.py add-grammar --pattern "..." --vi "..."
+python scripts/progress.py add-kana --type hiragana|katakana --chars "あいうえお"
+python scripts/progress.py set --key stage --value foundation      # khi đổi giai đoạn
+python scripts/progress.py notes --text "điểm mạnh, lỗi lặp lại, kế hoạch buổi sau"
+python scripts/progress.py session-end --mode nhanh|chuẩn|sâu --score "4/5" --notes "..." [--new-items ...] [--reviewed ...] [--workplace-finds ...]
+```
 
-**Mốc thành tích:** kiểm tra khi vừa đạt lần đầu — 5/10/25/50/100 buổi,
-46 hiragana, 46 katakana, 25/50/100/200 từ, 10/25/50 kanji. Chúc mừng một câu
-ngắn, đừng làm quá.
+`session-end` tự tăng `session_count`, ghi ngày hệ thống thật, tính lại nhịp
+độ 7 ngày, nén `sessions` khi vượt 40 bản ghi, và in ra `new_milestones` — các
+mốc vừa đạt lần đầu (5/10/25/50/100 buổi, đủ 46 hiragana/katakana,
+25/50/100/200 từ, 10/25/50 kanji). Có mốc thì chúc mừng một câu ngắn, đừng làm
+quá. Nếu `add` báo mục đã tồn tại thì bỏ qua, không phải lỗi.
 
 **Kết buổi:** một điều làm tốt, một điều cần chú ý buổi sau, một câu khích lệ.
 Ngắn gọn.
@@ -299,107 +313,16 @@ Ngắn gọn.
 
 ## Báo cáo tiến độ (khi được hỏi)
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Tiến độ tiếng Nhật của [tên]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-📊 TỔNG QUAN
-  Giai đoạn: [giai đoạn hiện tại]
-  Số buổi đã học: [N]
-  Nhịp độ: [N] buổi trong 7 ngày qua
-  Buổi gần nhất: [ngày]
-
-✍️ CHỮ VIẾT
-  Hiragana: [N]/46    Katakana: [N]/46
-
-📝 TỪ VỰNG
-  Tổng: [N] từ   (trong đó [N] từ thu được ở công ty)
-  Hộp 4–5 (nhớ chắc): [N]
-  Hộp 1–2 (đang xây): [N]
-
-🈶 KANJI: [N] chữ
-
-📈 GẦN ĐÂY
-  Điểm 3 buổi gần nhất: [...]
-  Làm tốt: [...]
-  Cần chú ý: [...]
-
-🎯 BUỔI TỚI: [nội dung dự kiến]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
+Chạy `python scripts/progress.py report`. Script in sẵn khung báo cáo với mọi
+con số; bạn chỉ điền ba dòng còn để trống — *Làm tốt*, *Cần chú ý* (rút từ ghi
+chú gia sư và các buổi gần nhất) và *Buổi tới* (theo `references/roadmap.md`
+và giai đoạn hiện tại) — rồi đưa nguyên khung cho người dùng.
 
 Không hiển thị streak theo ngày liên tiếp. Nhịp độ theo tuần là thước đo phù
 hợp với lịch làm việc thất thường.
 
----
-
-## Định dạng progress.json
-
-Dùng JSON thay vì markdown để sau này có thể đọc bằng chương trình, nếu người
-dùng muốn xây app học tiếng Nhật riêng.
-
-```json
-{
-  "profile": {
-    "name": "",
-    "started": "YYYY-MM-DD",
-    "stage": "kana",
-    "session_count": 0,
-    "last_session_date": "YYYY-MM-DD",
-    "sessions_last_7_days": 0,
-    "romaji": true,
-    "goals": "",
-    "context": "IT generalist tại công ty Nhật, khu công nghiệp, từ 09/2026",
-    "milestones": []
-  },
-  "kana": {
-    "hiragana_learned": [],
-    "katakana_learned": []
-  },
-  "vocabulary": [
-    {
-      "jp": "確認",
-      "reading": "かくにん",
-      "vi": "xác nhận",
-      "han_viet": "XÁC NHẬN",
-      "topic": "công sở",
-      "source": "workplace",
-      "introduced": 3,
-      "last_reviewed": 5,
-      "box": 2
-    }
-  ],
-  "kanji": [
-    {
-      "char": "人",
-      "han_viet": "NHÂN",
-      "on": "ジン・ニン",
-      "kun": "ひと",
-      "vi": "người",
-      "introduced": 4,
-      "last_reviewed": 4,
-      "box": 1
-    }
-  ],
-  "grammar": [
-    { "pattern": "〜です", "vi": "thể lịch sự", "introduced": 2, "box": 3 }
-  ],
-  "sessions": [
-    {
-      "n": 5,
-      "date": "YYYY-MM-DD",
-      "mode": "chuẩn",
-      "new_items": [],
-      "reviewed": [],
-      "workplace_finds": [],
-      "score": "4/5",
-      "notes": ""
-    }
-  ],
-  "notes": "Ghi chú của gia sư: điểm mạnh, lỗi lặp lại, kế hoạch buổi sau."
-}
-```
+Dự phòng khi không chạy được script: mẫu báo cáo nằm trong
+`references/progress-format.md`, tự điền bằng tay.
 
 ---
 
@@ -415,6 +338,9 @@ dùng muốn xây app học tiếng Nhật riêng.
 - `references/workplace-japanese.md` — tiếng Nhật công sở và nhà máy: câu cứu
   nguy, chào hỏi, thuật ngữ sản xuất và IT. Đọc khi dạy nội dung công sở hoặc
   khi người dùng mang từ ở công ty về.
+- `references/progress-format.md` — cấu trúc `progress.json`, bảng lệnh
+  `scripts/progress.py`, mẫu báo cáo. Đọc khi cần sửa file bằng tay hoặc khi
+  script báo lỗi cấu trúc.
 - `resources.json` — tài nguyên học tiếng Nhật, có cả nguồn tiếng Việt. Đọc khi
   người dùng hỏi nên học thêm ở đâu, hoặc khi giao bài nghe.
 
