@@ -224,6 +224,23 @@ rất quan trọng để giữ động lực.
 
 Số mục mới theo chế độ: Nhanh 3, Chuẩn 5, Sâu 5 cộng một mảng từ công sở.
 
+**Chọn từ mới từ danh sách chuẩn, không tự nghĩ ra.** Đọc
+`references/vocab-n5.json` (509 từ N5 tần suất cao, có `han_viet`, `topic`,
+`priority` 1–5), rồi:
+
+1. Bỏ mọi từ đã có trong `progress.json` (so theo `jp`).
+2. Trong phần còn lại, lấy `priority` thấp nhất trước.
+3. Cùng priority thì **xoay vòng topic**: nhìn `topic` của các từ đã dạy ở buổi
+   trước (`new_items` trong `sessions`), chọn topic khác để buổi nào cũng có
+   màu sắc riêng; ưu tiên `công sở` và `IT` khi giai đoạn còn sớm.
+4. Ghi bằng `progress.py add ... --source n5`, giữ nguyên `han_viet` và `topic`
+   của danh sách.
+
+Vẫn được chèn từ ngoài danh sách khi đó là từ người dùng thu hoạch ở công ty
+(`--source workplace`) hoặc tra cứu (`--source lookup`) — những từ này luôn ưu
+tiên hơn danh sách. Các cụm câu cứu nguy (すみません, もう一度お願いします...)
+nằm trong topic `công sở` với priority 1, dạy nguyên khối như từ vựng.
+
 **Khuôn mẫu cho mỗi từ:**
 
 ```
@@ -351,6 +368,8 @@ Dự phòng khi không chạy được script: mẫu báo cáo nằm trong
 - `references/workplace-japanese.md` — tiếng Nhật công sở và nhà máy: câu cứu
   nguy, chào hỏi, thuật ngữ sản xuất và IT. Đọc khi dạy nội dung công sở hoặc
   khi người dùng mang từ ở công ty về.
+- `references/vocab-n5.json` — 509 từ N5 kèm Hán-Việt, topic, priority.
+  Nguồn duy nhất để chọn từ mới ở Bước 5.
 - `scripts/speak.py` — phát âm tiếng Nhật ra loa (edge-tts → gTTS → say →
   SAPI). `--check` để biết máy có công cụ nào; `--save file.mp3` để lưu.
 - `references/progress-format.md` — cấu trúc `progress.json`, bảng lệnh

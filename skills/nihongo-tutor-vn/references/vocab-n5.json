@@ -1,0 +1,4107 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Từ vựng N5 tần suất cao cho người Việt, cộng nhóm 'công sở' lấy từ workplace-japanese.md. Dùng ở Bước 5 của SKILL.md để chọn từ mới.",
+    "fields": {
+      "jp": "cách viết chuẩn (kanji/kana)",
+      "reading": "cách đọc bằng kana; nhiều cách đọc ngăn bằng ・",
+      "vi": "nghĩa tiếng Việt",
+      "han_viet": "âm Hán-Việt của các kanji trong từ, viết HOA; null nếu từ thuần Nhật/katakana hoặc không chắc. Với từ đọc theo âm Kun, han_viet chỉ neo NGHĨA, không suy ra cách đọc.",
+      "topic": "chủ đề, dùng để xoay vòng khi chọn từ mới",
+      "priority": "1–5, 1 dạy trước"
+    },
+    "topics": [
+      "IT",
+      "công sở",
+      "gia đình",
+      "giao thông",
+      "học tập",
+      "nơi chốn",
+      "số đếm",
+      "thiên nhiên",
+      "thân thể",
+      "thời gian",
+      "trạng từ",
+      "tính từ",
+      "ăn uống",
+      "đại từ",
+      "đồ vật",
+      "động từ"
+    ],
+    "count": 509
+  },
+  "words": [
+    {
+      "jp": "すみません",
+      "reading": "すみません",
+      "vi": "xin lỗi / làm phiền / gọi người khác",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "もう一度お願いします",
+      "reading": "もういちどおねがいします",
+      "vi": "xin nhắc lại lần nữa",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "ゆっくりお願いします",
+      "reading": "ゆっくりおねがいします",
+      "vi": "xin nói chậm hơn",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "わかりません",
+      "reading": "わかりません",
+      "vi": "tôi không hiểu",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "わかりました",
+      "reading": "わかりました",
+      "vi": "tôi hiểu rồi",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "英語でいいですか",
+      "reading": "えいごでいいですか",
+      "vi": "nói tiếng Anh được không?",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "これは何ですか",
+      "reading": "これはなんですか",
+      "vi": "cái này là gì?",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "どういう意味ですか",
+      "reading": "どういういみですか",
+      "vi": "nghĩa là gì?",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "ちょっと待ってください",
+      "reading": "ちょっとまってください",
+      "vi": "đợi tôi một chút",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "おはようございます",
+      "reading": "おはようございます",
+      "vi": "chào buổi sáng",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "お疲れ様です",
+      "reading": "おつかれさまです",
+      "vi": "câu chào vạn năng ở công ty (bạn vất vả rồi)",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "お先に失礼します",
+      "reading": "おさきにしつれいします",
+      "vi": "tôi xin phép về trước",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "よろしくお願いします",
+      "reading": "よろしくおねがいします",
+      "vi": "mong được giúp đỡ / nhờ anh chị",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "ありがとうございます",
+      "reading": "ありがとうございます",
+      "vi": "cảm ơn",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "申し訳ありません",
+      "reading": "もうしわけありません",
+      "vi": "thành thật xin lỗi (trang trọng)",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "失礼します",
+      "reading": "しつれいします",
+      "vi": "xin phép (khi vào/ra phòng)",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "確認",
+      "reading": "かくにん",
+      "vi": "xác nhận",
+      "han_viet": "XÁC NHẬN",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "報告",
+      "reading": "ほうこく",
+      "vi": "báo cáo",
+      "han_viet": "BÁO CÁO",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "連絡",
+      "reading": "れんらく",
+      "vi": "liên lạc",
+      "han_viet": "LIÊN LẠC",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "相談",
+      "reading": "そうだん",
+      "vi": "hỏi ý kiến, bàn bạc",
+      "han_viet": "TƯƠNG ĐÀM",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "会社",
+      "reading": "かいしゃ",
+      "vi": "công ty",
+      "han_viet": "HỘI XÃ",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "仕事",
+      "reading": "しごと",
+      "vi": "công việc",
+      "han_viet": "SĨ SỰ",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "会議",
+      "reading": "かいぎ",
+      "vi": "cuộc họp",
+      "han_viet": "HỘI NGHỊ",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "現場",
+      "reading": "げんば",
+      "vi": "hiện trường, xưởng",
+      "han_viet": "HIỆN TRƯỜNG",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "工場",
+      "reading": "こうじょう",
+      "vi": "nhà máy",
+      "han_viet": "CÔNG TRƯỜNG",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "作業",
+      "reading": "さぎょう",
+      "vi": "thao tác, công việc",
+      "han_viet": "TÁC NGHIỆP",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "安全",
+      "reading": "あんぜん",
+      "vi": "an toàn",
+      "han_viet": "AN TOÀN",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "危険",
+      "reading": "きけん",
+      "vi": "nguy hiểm",
+      "han_viet": "NGUY HIỂM",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "注意",
+      "reading": "ちゅうい",
+      "vi": "chú ý",
+      "han_viet": "CHÚ Ý",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "準備",
+      "reading": "じゅんび",
+      "vi": "chuẩn bị",
+      "han_viet": "CHUẨN BỊ",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "問題",
+      "reading": "もんだい",
+      "vi": "vấn đề",
+      "han_viet": "VẤN ĐỀ",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "大丈夫",
+      "reading": "だいじょうぶ",
+      "vi": "không sao, ổn",
+      "han_viet": "ĐẠI TRƯỢNG PHU",
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "お願いします",
+      "reading": "おねがいします",
+      "vi": "nhờ, làm ơn",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "休み",
+      "reading": "やすみ",
+      "vi": "nghỉ, ngày nghỉ",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 1
+    },
+    {
+      "jp": "生産",
+      "reading": "せいさん",
+      "vi": "sản xuất",
+      "han_viet": "SINH SẢN",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "品質",
+      "reading": "ひんしつ",
+      "vi": "chất lượng",
+      "han_viet": "PHẨM CHẤT",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "不良",
+      "reading": "ふりょう",
+      "vi": "hàng lỗi",
+      "han_viet": "BẤT LƯƠNG",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "検査",
+      "reading": "けんさ",
+      "vi": "kiểm tra",
+      "han_viet": "KIỂM TRA",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "点検",
+      "reading": "てんけん",
+      "vi": "kiểm tra định kỳ",
+      "han_viet": "ĐIỂM KIỂM",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "部品",
+      "reading": "ぶひん",
+      "vi": "linh kiện",
+      "han_viet": "BỘ PHẨM",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "在庫",
+      "reading": "ざいこ",
+      "vi": "hàng tồn kho",
+      "han_viet": "TẠI KHỐ",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "納期",
+      "reading": "のうき",
+      "vi": "hạn giao hàng",
+      "han_viet": "NẠP KỲ",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "改善",
+      "reading": "かいぜん",
+      "vi": "cải tiến (kaizen)",
+      "han_viet": "CẢI THIỆN",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "朝礼",
+      "reading": "ちょうれい",
+      "vi": "họp đầu giờ sáng",
+      "han_viet": "TRIÊU LỄ",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "残業",
+      "reading": "ざんぎょう",
+      "vi": "tăng ca",
+      "han_viet": "TÀN NGHIỆP",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "有給",
+      "reading": "ゆうきゅう",
+      "vi": "nghỉ phép có lương",
+      "han_viet": "HỮU CẤP",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "対応",
+      "reading": "たいおう",
+      "vi": "xử lý, ứng phó",
+      "han_viet": "ĐỐI ỨNG",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "設定",
+      "reading": "せってい",
+      "vi": "cài đặt",
+      "han_viet": "THIẾT ĐỊNH",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "再起動",
+      "reading": "さいきどう",
+      "vi": "khởi động lại",
+      "han_viet": "TÁI KHỞI ĐỘNG",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "接続",
+      "reading": "せつぞく",
+      "vi": "kết nối",
+      "han_viet": "TIẾP TỤC",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "障害",
+      "reading": "しょうがい",
+      "vi": "sự cố",
+      "han_viet": "CHƯỚNG HẠI",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "修理",
+      "reading": "しゅうり",
+      "vi": "sửa chữa",
+      "han_viet": "TU LÝ",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "部長",
+      "reading": "ぶちょう",
+      "vi": "trưởng phòng",
+      "han_viet": "BỘ TRƯỞNG",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "課長",
+      "reading": "かちょう",
+      "vi": "trưởng bộ phận",
+      "han_viet": "KHÓA TRƯỞNG",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "社長",
+      "reading": "しゃちょう",
+      "vi": "giám đốc công ty",
+      "han_viet": "XÃ TRƯỞNG",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "社員",
+      "reading": "しゃいん",
+      "vi": "nhân viên công ty",
+      "han_viet": "XÃ VIÊN",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "同僚",
+      "reading": "どうりょう",
+      "vi": "đồng nghiệp",
+      "han_viet": "ĐỒNG LIÊU",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "上司",
+      "reading": "じょうし",
+      "vi": "cấp trên",
+      "han_viet": "THƯỢNG TY",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "事務所",
+      "reading": "じむしょ",
+      "vi": "văn phòng",
+      "han_viet": "SỰ VỤ SỞ",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "電話",
+      "reading": "でんわ",
+      "vi": "điện thoại",
+      "han_viet": "ĐIỆN THOẠI",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "番号",
+      "reading": "ばんごう",
+      "vi": "số (điện thoại, thứ tự)",
+      "han_viet": "PHIÊN HIỆU",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "名前",
+      "reading": "なまえ",
+      "vi": "tên",
+      "han_viet": "DANH TIỀN",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "説明",
+      "reading": "せつめい",
+      "vi": "giải thích",
+      "han_viet": "THUYẾT MINH",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "質問",
+      "reading": "しつもん",
+      "vi": "câu hỏi",
+      "han_viet": "CHẤT VẤN",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "予定",
+      "reading": "よてい",
+      "vi": "dự định, lịch",
+      "han_viet": "DỰ ĐỊNH",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "時間",
+      "reading": "じかん",
+      "vi": "thời gian",
+      "han_viet": "THỜI GIAN",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "大切",
+      "reading": "たいせつ",
+      "vi": "quan trọng",
+      "han_viet": "ĐẠI THIẾT",
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "同じ",
+      "reading": "おなじ",
+      "vi": "giống nhau",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "違う",
+      "reading": "ちがう",
+      "vi": "khác, sai",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "使う",
+      "reading": "つかう",
+      "vi": "sử dụng",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "働く",
+      "reading": "はたらく",
+      "vi": "làm việc",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "手伝う",
+      "reading": "てつだう",
+      "vi": "giúp đỡ",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "頼む",
+      "reading": "たのむ",
+      "vi": "nhờ vả",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "忘れる",
+      "reading": "わすれる",
+      "vi": "quên",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "覚える",
+      "reading": "おぼえる",
+      "vi": "nhớ, học thuộc",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "急ぐ",
+      "reading": "いそぐ",
+      "vi": "vội, gấp",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "止める",
+      "reading": "とめる",
+      "vi": "dừng (máy, xe)",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "直す",
+      "reading": "なおす",
+      "vi": "sửa",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "終わる",
+      "reading": "おわる",
+      "vi": "kết thúc",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "始まる",
+      "reading": "はじまる",
+      "vi": "bắt đầu",
+      "han_viet": null,
+      "topic": "công sở",
+      "priority": 2
+    },
+    {
+      "jp": "データ",
+      "reading": "データ",
+      "vi": "dữ liệu",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "システム",
+      "reading": "システム",
+      "vi": "hệ thống",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "サーバー",
+      "reading": "サーバー",
+      "vi": "máy chủ",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "パソコン",
+      "reading": "パソコン",
+      "vi": "máy tính cá nhân",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "メール",
+      "reading": "メール",
+      "vi": "email",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "vi": "tệp tin",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "テスト",
+      "reading": "テスト",
+      "vi": "kiểm thử, bài kiểm tra",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "エラー",
+      "reading": "エラー",
+      "vi": "lỗi",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "バグ",
+      "reading": "バグ",
+      "vi": "bug",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "パスワード",
+      "reading": "パスワード",
+      "vi": "mật khẩu",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 1
+    },
+    {
+      "jp": "ネットワーク",
+      "reading": "ネットワーク",
+      "vi": "mạng",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "ソフト",
+      "reading": "ソフト",
+      "vi": "phần mềm",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "プログラム",
+      "reading": "プログラム",
+      "vi": "chương trình",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "アカウント",
+      "reading": "アカウント",
+      "vi": "tài khoản",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "ログイン",
+      "reading": "ログイン",
+      "vi": "đăng nhập",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "インストール",
+      "reading": "インストール",
+      "vi": "cài đặt (phần mềm)",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "アップデート",
+      "reading": "アップデート",
+      "vi": "cập nhật",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "バックアップ",
+      "reading": "バックアップ",
+      "vi": "sao lưu",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "セキュリティ",
+      "reading": "セキュリティ",
+      "vi": "bảo mật",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "トラブル",
+      "reading": "トラブル",
+      "vi": "sự cố, rắc rối",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "フォルダ",
+      "reading": "フォルダ",
+      "vi": "thư mục",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "プリンター",
+      "reading": "プリンター",
+      "vi": "máy in",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "キーボード",
+      "reading": "キーボード",
+      "vi": "bàn phím",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "マウス",
+      "reading": "マウス",
+      "vi": "chuột",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "画面",
+      "reading": "がめん",
+      "vi": "màn hình",
+      "han_viet": "HỌA DIỆN",
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "電源",
+      "reading": "でんげん",
+      "vi": "nguồn điện",
+      "han_viet": "ĐIỆN NGUYÊN",
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "コピー",
+      "reading": "コピー",
+      "vi": "sao chép, photocopy",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "スマホ",
+      "reading": "スマホ",
+      "vi": "điện thoại thông minh",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "インターネット",
+      "reading": "インターネット",
+      "vi": "internet",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "ボタン",
+      "reading": "ボタン",
+      "vi": "nút bấm",
+      "han_viet": null,
+      "topic": "IT",
+      "priority": 2
+    },
+    {
+      "jp": "私",
+      "reading": "わたし",
+      "vi": "tôi",
+      "han_viet": "TƯ",
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "あなた",
+      "reading": "あなた",
+      "vi": "bạn (ngôi 2, hạn chế dùng)",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "これ",
+      "reading": "これ",
+      "vi": "cái này",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "それ",
+      "reading": "それ",
+      "vi": "cái đó",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "あれ",
+      "reading": "あれ",
+      "vi": "cái kia",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "この",
+      "reading": "この",
+      "vi": "này (đứng trước danh từ)",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "その",
+      "reading": "その",
+      "vi": "đó (đứng trước danh từ)",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "あの",
+      "reading": "あの",
+      "vi": "kia (đứng trước danh từ)",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "ここ",
+      "reading": "ここ",
+      "vi": "chỗ này",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "そこ",
+      "reading": "そこ",
+      "vi": "chỗ đó",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "あそこ",
+      "reading": "あそこ",
+      "vi": "chỗ kia",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "どこ",
+      "reading": "どこ",
+      "vi": "ở đâu",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "何",
+      "reading": "なに・なん",
+      "vi": "cái gì",
+      "han_viet": "HÀ",
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "誰",
+      "reading": "だれ",
+      "vi": "ai",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "いつ",
+      "reading": "いつ",
+      "vi": "khi nào",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "どう",
+      "reading": "どう",
+      "vi": "thế nào",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "どれ",
+      "reading": "どれ",
+      "vi": "cái nào",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "いくら",
+      "reading": "いくら",
+      "vi": "bao nhiêu tiền",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "いくつ",
+      "reading": "いくつ",
+      "vi": "mấy cái, bao nhiêu tuổi",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "どうして",
+      "reading": "どうして",
+      "vi": "tại sao",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 1
+    },
+    {
+      "jp": "彼",
+      "reading": "かれ",
+      "vi": "anh ấy",
+      "han_viet": "BỈ",
+      "topic": "đại từ",
+      "priority": 3
+    },
+    {
+      "jp": "彼女",
+      "reading": "かのじょ",
+      "vi": "cô ấy",
+      "han_viet": "BỈ NỮ",
+      "topic": "đại từ",
+      "priority": 3
+    },
+    {
+      "jp": "皆さん",
+      "reading": "みなさん",
+      "vi": "mọi người",
+      "han_viet": "GIAI",
+      "topic": "đại từ",
+      "priority": 3
+    },
+    {
+      "jp": "自分",
+      "reading": "じぶん",
+      "vi": "bản thân",
+      "han_viet": "TỰ PHẬN",
+      "topic": "đại từ",
+      "priority": 3
+    },
+    {
+      "jp": "こちら",
+      "reading": "こちら",
+      "vi": "phía này, đây (lịch sự)",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 3
+    },
+    {
+      "jp": "どちら",
+      "reading": "どちら",
+      "vi": "phía nào, cái nào (lịch sự)",
+      "han_viet": null,
+      "topic": "đại từ",
+      "priority": 3
+    },
+    {
+      "jp": "一",
+      "reading": "いち",
+      "vi": "một",
+      "han_viet": "NHẤT",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "二",
+      "reading": "に",
+      "vi": "hai",
+      "han_viet": "NHỊ",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "三",
+      "reading": "さん",
+      "vi": "ba",
+      "han_viet": "TAM",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "四",
+      "reading": "よん・し",
+      "vi": "bốn",
+      "han_viet": "TỨ",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "五",
+      "reading": "ご",
+      "vi": "năm",
+      "han_viet": "NGŨ",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "六",
+      "reading": "ろく",
+      "vi": "sáu",
+      "han_viet": "LỤC",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "七",
+      "reading": "なな・しち",
+      "vi": "bảy",
+      "han_viet": "THẤT",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "八",
+      "reading": "はち",
+      "vi": "tám",
+      "han_viet": "BÁT",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "九",
+      "reading": "きゅう・く",
+      "vi": "chín",
+      "han_viet": "CỬU",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "十",
+      "reading": "じゅう",
+      "vi": "mười",
+      "han_viet": "THẬP",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "百",
+      "reading": "ひゃく",
+      "vi": "trăm",
+      "han_viet": "BÁCH",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "千",
+      "reading": "せん",
+      "vi": "nghìn",
+      "han_viet": "THIÊN",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "万",
+      "reading": "まん",
+      "vi": "vạn (mười nghìn)",
+      "han_viet": "VẠN",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "円",
+      "reading": "えん",
+      "vi": "yên (tiền Nhật)",
+      "han_viet": "VIÊN",
+      "topic": "số đếm",
+      "priority": 1
+    },
+    {
+      "jp": "一つ",
+      "reading": "ひとつ",
+      "vi": "một cái",
+      "han_viet": "NHẤT",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "二つ",
+      "reading": "ふたつ",
+      "vi": "hai cái",
+      "han_viet": "NHỊ",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "三つ",
+      "reading": "みっつ",
+      "vi": "ba cái",
+      "han_viet": "TAM",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "一人",
+      "reading": "ひとり",
+      "vi": "một người",
+      "han_viet": "NHẤT NHÂN",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "二人",
+      "reading": "ふたり",
+      "vi": "hai người",
+      "han_viet": "NHỊ NHÂN",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "半分",
+      "reading": "はんぶん",
+      "vi": "một nửa",
+      "han_viet": "BÁN PHÂN",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "番",
+      "reading": "ばん",
+      "vi": "số thứ tự",
+      "han_viet": "PHIÊN",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "枚",
+      "reading": "まい",
+      "vi": "tờ, tấm (đếm vật mỏng)",
+      "han_viet": "MAI",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "台",
+      "reading": "だい",
+      "vi": "chiếc (đếm máy, xe)",
+      "han_viet": "ĐÀI",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "回",
+      "reading": "かい",
+      "vi": "lần",
+      "han_viet": "HỒI",
+      "topic": "số đếm",
+      "priority": 3
+    },
+    {
+      "jp": "今日",
+      "reading": "きょう",
+      "vi": "hôm nay",
+      "han_viet": "KIM NHẬT",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "明日",
+      "reading": "あした",
+      "vi": "ngày mai",
+      "han_viet": "MINH NHẬT",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "昨日",
+      "reading": "きのう",
+      "vi": "hôm qua",
+      "han_viet": "TẠC NHẬT",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "今",
+      "reading": "いま",
+      "vi": "bây giờ",
+      "han_viet": "KIM",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "朝",
+      "reading": "あさ",
+      "vi": "buổi sáng",
+      "han_viet": "TRIÊU",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "昼",
+      "reading": "ひる",
+      "vi": "buổi trưa",
+      "han_viet": "TRÚ",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "夜",
+      "reading": "よる",
+      "vi": "buổi tối",
+      "han_viet": "DẠ",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "時",
+      "reading": "じ",
+      "vi": "giờ",
+      "han_viet": "THỜI",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "分",
+      "reading": "ふん・ぷん",
+      "vi": "phút",
+      "han_viet": "PHÂN",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "半",
+      "reading": "はん",
+      "vi": "rưỡi",
+      "han_viet": "BÁN",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "毎日",
+      "reading": "まいにち",
+      "vi": "mỗi ngày",
+      "han_viet": "MỖI NHẬT",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "月曜日",
+      "reading": "げつようび",
+      "vi": "thứ hai",
+      "han_viet": "NGUYỆT DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "金曜日",
+      "reading": "きんようび",
+      "vi": "thứ sáu",
+      "han_viet": "KIM DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 1
+    },
+    {
+      "jp": "火曜日",
+      "reading": "かようび",
+      "vi": "thứ ba",
+      "han_viet": "HỎA DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "水曜日",
+      "reading": "すいようび",
+      "vi": "thứ tư",
+      "han_viet": "THỦY DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "木曜日",
+      "reading": "もくようび",
+      "vi": "thứ năm",
+      "han_viet": "MỘC DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "土曜日",
+      "reading": "どようび",
+      "vi": "thứ bảy",
+      "han_viet": "THỔ DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "日曜日",
+      "reading": "にちようび",
+      "vi": "chủ nhật",
+      "han_viet": "NHẬT DIỆU NHẬT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "今週",
+      "reading": "こんしゅう",
+      "vi": "tuần này",
+      "han_viet": "KIM TUẦN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "来週",
+      "reading": "らいしゅう",
+      "vi": "tuần sau",
+      "han_viet": "LAI TUẦN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "先週",
+      "reading": "せんしゅう",
+      "vi": "tuần trước",
+      "han_viet": "TIÊN TUẦN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "今月",
+      "reading": "こんげつ",
+      "vi": "tháng này",
+      "han_viet": "KIM NGUYỆT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "来月",
+      "reading": "らいげつ",
+      "vi": "tháng sau",
+      "han_viet": "LAI NGUYỆT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "今年",
+      "reading": "ことし",
+      "vi": "năm nay",
+      "han_viet": "KIM NIÊN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "去年",
+      "reading": "きょねん",
+      "vi": "năm ngoái",
+      "han_viet": "KHỨ NIÊN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "午前",
+      "reading": "ごぜん",
+      "vi": "buổi sáng (AM)",
+      "han_viet": "NGỌ TIỀN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "午後",
+      "reading": "ごご",
+      "vi": "buổi chiều (PM)",
+      "han_viet": "NGỌ HẬU",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "週末",
+      "reading": "しゅうまつ",
+      "vi": "cuối tuần",
+      "han_viet": "TUẦN MẠT",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "毎朝",
+      "reading": "まいあさ",
+      "vi": "mỗi sáng",
+      "han_viet": "MỖI TRIÊU",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "毎週",
+      "reading": "まいしゅう",
+      "vi": "mỗi tuần",
+      "han_viet": "MỖI TUẦN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "後で",
+      "reading": "あとで",
+      "vi": "lát nữa, sau đó",
+      "han_viet": null,
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "前",
+      "reading": "まえ",
+      "vi": "trước",
+      "han_viet": "TIỀN",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "後",
+      "reading": "あと・うしろ",
+      "vi": "sau / phía sau",
+      "han_viet": "HẬU",
+      "topic": "thời gian",
+      "priority": 2
+    },
+    {
+      "jp": "一月",
+      "reading": "いちがつ",
+      "vi": "tháng một",
+      "han_viet": "NHẤT NGUYỆT",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "九月",
+      "reading": "くがつ",
+      "vi": "tháng chín",
+      "han_viet": "CỬU NGUYỆT",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "日",
+      "reading": "ひ・にち",
+      "vi": "ngày",
+      "han_viet": "NHẬT",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "月",
+      "reading": "つき・がつ",
+      "vi": "tháng / mặt trăng",
+      "han_viet": "NGUYỆT",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "年",
+      "reading": "ねん・とし",
+      "vi": "năm",
+      "han_viet": "NIÊN",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "春",
+      "reading": "はる",
+      "vi": "mùa xuân",
+      "han_viet": "XUÂN",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "夏",
+      "reading": "なつ",
+      "vi": "mùa hè",
+      "han_viet": "HẠ",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "秋",
+      "reading": "あき",
+      "vi": "mùa thu",
+      "han_viet": "THU",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "冬",
+      "reading": "ふゆ",
+      "vi": "mùa đông",
+      "han_viet": "ĐÔNG",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "誕生日",
+      "reading": "たんじょうび",
+      "vi": "sinh nhật",
+      "han_viet": "ĐẢN SINH NHẬT",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "時々",
+      "reading": "ときどき",
+      "vi": "thỉnh thoảng",
+      "han_viet": "THỜI THỜI",
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "いつも",
+      "reading": "いつも",
+      "vi": "luôn luôn",
+      "han_viet": null,
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "まだ",
+      "reading": "まだ",
+      "vi": "vẫn chưa / vẫn còn",
+      "han_viet": null,
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "もう",
+      "reading": "もう",
+      "vi": "đã, rồi",
+      "han_viet": null,
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "すぐ",
+      "reading": "すぐ",
+      "vi": "ngay lập tức",
+      "han_viet": null,
+      "topic": "thời gian",
+      "priority": 3
+    },
+    {
+      "jp": "人",
+      "reading": "ひと",
+      "vi": "người",
+      "han_viet": "NHÂN",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "家族",
+      "reading": "かぞく",
+      "vi": "gia đình",
+      "han_viet": "GIA TỘC",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "父",
+      "reading": "ちち",
+      "vi": "bố (của mình)",
+      "han_viet": "PHỤ",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "母",
+      "reading": "はは",
+      "vi": "mẹ (của mình)",
+      "han_viet": "MẪU",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "お父さん",
+      "reading": "おとうさん",
+      "vi": "bố (người khác / gọi)",
+      "han_viet": "PHỤ",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "お母さん",
+      "reading": "おかあさん",
+      "vi": "mẹ (người khác / gọi)",
+      "han_viet": "MẪU",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "子供",
+      "reading": "こども",
+      "vi": "trẻ con",
+      "han_viet": null,
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "兄",
+      "reading": "あに",
+      "vi": "anh trai (của mình)",
+      "han_viet": "HUYNH",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "姉",
+      "reading": "あね",
+      "vi": "chị gái (của mình)",
+      "han_viet": "TỶ",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "弟",
+      "reading": "おとうと",
+      "vi": "em trai",
+      "han_viet": "ĐỆ",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "妹",
+      "reading": "いもうと",
+      "vi": "em gái",
+      "han_viet": "MUỘI",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "友達",
+      "reading": "ともだち",
+      "vi": "bạn bè",
+      "han_viet": "HỮU ĐẠT",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "男",
+      "reading": "おとこ",
+      "vi": "đàn ông",
+      "han_viet": "NAM",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "女",
+      "reading": "おんな",
+      "vi": "phụ nữ",
+      "han_viet": "NỮ",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "先生",
+      "reading": "せんせい",
+      "vi": "thầy cô, giáo viên",
+      "han_viet": "TIÊN SINH",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "学生",
+      "reading": "がくせい",
+      "vi": "học sinh, sinh viên",
+      "han_viet": "HỌC SINH",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "外国人",
+      "reading": "がいこくじん",
+      "vi": "người nước ngoài",
+      "han_viet": "NGOẠI QUỐC NHÂN",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "日本人",
+      "reading": "にほんじん",
+      "vi": "người Nhật",
+      "han_viet": "NHẬT BẢN NHÂN",
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "ベトナム人",
+      "reading": "ベトナムじん",
+      "vi": "người Việt Nam",
+      "han_viet": null,
+      "topic": "gia đình",
+      "priority": 2
+    },
+    {
+      "jp": "行く",
+      "reading": "いく",
+      "vi": "đi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "来る",
+      "reading": "くる",
+      "vi": "đến",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "帰る",
+      "reading": "かえる",
+      "vi": "về (nhà)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "食べる",
+      "reading": "たべる",
+      "vi": "ăn",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "飲む",
+      "reading": "のむ",
+      "vi": "uống",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "見る",
+      "reading": "みる",
+      "vi": "xem, nhìn",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "聞く",
+      "reading": "きく",
+      "vi": "nghe, hỏi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "話す",
+      "reading": "はなす",
+      "vi": "nói chuyện",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "読む",
+      "reading": "よむ",
+      "vi": "đọc",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "書く",
+      "reading": "かく",
+      "vi": "viết",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "する",
+      "reading": "する",
+      "vi": "làm",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "ある",
+      "reading": "ある",
+      "vi": "có (đồ vật)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "いる",
+      "reading": "いる",
+      "vi": "có (người, động vật)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "買う",
+      "reading": "かう",
+      "vi": "mua",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "言う",
+      "reading": "いう",
+      "vi": "nói",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "分かる",
+      "reading": "わかる",
+      "vi": "hiểu",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "待つ",
+      "reading": "まつ",
+      "vi": "đợi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "作る",
+      "reading": "つくる",
+      "vi": "làm, chế tạo",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "入る",
+      "reading": "はいる",
+      "vi": "vào",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "出る",
+      "reading": "でる",
+      "vi": "ra",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 1
+    },
+    {
+      "jp": "起きる",
+      "reading": "おきる",
+      "vi": "thức dậy",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "寝る",
+      "reading": "ねる",
+      "vi": "ngủ",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "会う",
+      "reading": "あう",
+      "vi": "gặp",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "教える",
+      "reading": "おしえる",
+      "vi": "dạy, chỉ cho",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "習う",
+      "reading": "ならう",
+      "vi": "học (từ ai đó)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "勉強する",
+      "reading": "べんきょうする",
+      "vi": "học",
+      "han_viet": "MIỄN CƯỠNG",
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "知る",
+      "reading": "しる",
+      "vi": "biết",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "思う",
+      "reading": "おもう",
+      "vi": "nghĩ",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "持つ",
+      "reading": "もつ",
+      "vi": "cầm, có",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "取る",
+      "reading": "とる",
+      "vi": "lấy",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "置く",
+      "reading": "おく",
+      "vi": "đặt, để",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "開ける",
+      "reading": "あける",
+      "vi": "mở",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "閉める",
+      "reading": "しめる",
+      "vi": "đóng",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "押す",
+      "reading": "おす",
+      "vi": "ấn, đẩy",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "引く",
+      "reading": "ひく",
+      "vi": "kéo",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "送る",
+      "reading": "おくる",
+      "vi": "gửi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "見せる",
+      "reading": "みせる",
+      "vi": "cho xem",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "歩く",
+      "reading": "あるく",
+      "vi": "đi bộ",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "走る",
+      "reading": "はしる",
+      "vi": "chạy",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "乗る",
+      "reading": "のる",
+      "vi": "lên (xe, tàu)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "降りる",
+      "reading": "おりる",
+      "vi": "xuống (xe, tàu)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "立つ",
+      "reading": "たつ",
+      "vi": "đứng",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "座る",
+      "reading": "すわる",
+      "vi": "ngồi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "休む",
+      "reading": "やすむ",
+      "vi": "nghỉ",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "洗う",
+      "reading": "あらう",
+      "vi": "rửa",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "着る",
+      "reading": "きる",
+      "vi": "mặc",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "撮る",
+      "reading": "とる",
+      "vi": "chụp (ảnh)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "電話する",
+      "reading": "でんわする",
+      "vi": "gọi điện",
+      "han_viet": "ĐIỆN THOẠI",
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "要る",
+      "reading": "いる",
+      "vi": "cần",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "答える",
+      "reading": "こたえる",
+      "vi": "trả lời",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 2
+    },
+    {
+      "jp": "死ぬ",
+      "reading": "しぬ",
+      "vi": "chết",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "住む",
+      "reading": "すむ",
+      "vi": "sống, cư trú",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "泳ぐ",
+      "reading": "およぐ",
+      "vi": "bơi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "遊ぶ",
+      "reading": "あそぶ",
+      "vi": "chơi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "歌う",
+      "reading": "うたう",
+      "vi": "hát",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "貸す",
+      "reading": "かす",
+      "vi": "cho mượn",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "借りる",
+      "reading": "かりる",
+      "vi": "mượn",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "返す",
+      "reading": "かえす",
+      "vi": "trả lại",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "消す",
+      "reading": "けす",
+      "vi": "tắt, xóa",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "つける",
+      "reading": "つける",
+      "vi": "bật",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "並ぶ",
+      "reading": "ならぶ",
+      "vi": "xếp hàng",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "曲がる",
+      "reading": "まがる",
+      "vi": "rẽ",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "渡る",
+      "reading": "わたる",
+      "vi": "băng qua",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "咲く",
+      "reading": "さく",
+      "vi": "nở (hoa)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "降る",
+      "reading": "ふる",
+      "vi": "rơi (mưa, tuyết)",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "吹く",
+      "reading": "ふく",
+      "vi": "thổi",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "切る",
+      "reading": "きる",
+      "vi": "cắt",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "練習する",
+      "reading": "れんしゅうする",
+      "vi": "luyện tập",
+      "han_viet": "LUYỆN TẬP",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "散歩する",
+      "reading": "さんぽする",
+      "vi": "đi dạo",
+      "han_viet": "TÁN BỘ",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "結婚する",
+      "reading": "けっこんする",
+      "vi": "kết hôn",
+      "han_viet": "KẾT HÔN",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "旅行する",
+      "reading": "りょこうする",
+      "vi": "du lịch",
+      "han_viet": "LỮ HÀNH",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "掃除する",
+      "reading": "そうじする",
+      "vi": "dọn dẹp",
+      "han_viet": "TẢO TRỪ",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "洗濯する",
+      "reading": "せんたくする",
+      "vi": "giặt giũ",
+      "han_viet": "TẨY TRẠC",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "買い物する",
+      "reading": "かいものする",
+      "vi": "mua sắm",
+      "han_viet": null,
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "質問する",
+      "reading": "しつもんする",
+      "vi": "đặt câu hỏi",
+      "han_viet": "CHẤT VẤN",
+      "topic": "động từ",
+      "priority": 3
+    },
+    {
+      "jp": "いい",
+      "reading": "いい",
+      "vi": "tốt",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "悪い",
+      "reading": "わるい",
+      "vi": "xấu, tệ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "大きい",
+      "reading": "おおきい",
+      "vi": "to",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "小さい",
+      "reading": "ちいさい",
+      "vi": "nhỏ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "新しい",
+      "reading": "あたらしい",
+      "vi": "mới",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "古い",
+      "reading": "ふるい",
+      "vi": "cũ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "高い",
+      "reading": "たかい",
+      "vi": "cao / đắt",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "安い",
+      "reading": "やすい",
+      "vi": "rẻ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "早い",
+      "reading": "はやい",
+      "vi": "sớm",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "速い",
+      "reading": "はやい",
+      "vi": "nhanh",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "遅い",
+      "reading": "おそい",
+      "vi": "chậm, muộn",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "多い",
+      "reading": "おおい",
+      "vi": "nhiều",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "少ない",
+      "reading": "すくない",
+      "vi": "ít",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "忙しい",
+      "reading": "いそがしい",
+      "vi": "bận",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "難しい",
+      "reading": "むずかしい",
+      "vi": "khó",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "易しい",
+      "reading": "やさしい",
+      "vi": "dễ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 1
+    },
+    {
+      "jp": "暑い",
+      "reading": "あつい",
+      "vi": "nóng (thời tiết)",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "寒い",
+      "reading": "さむい",
+      "vi": "lạnh (thời tiết)",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "熱い",
+      "reading": "あつい",
+      "vi": "nóng (vật)",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "冷たい",
+      "reading": "つめたい",
+      "vi": "lạnh (vật)",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "長い",
+      "reading": "ながい",
+      "vi": "dài",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "短い",
+      "reading": "みじかい",
+      "vi": "ngắn",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "近い",
+      "reading": "ちかい",
+      "vi": "gần",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "遠い",
+      "reading": "とおい",
+      "vi": "xa",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "広い",
+      "reading": "ひろい",
+      "vi": "rộng",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "狭い",
+      "reading": "せまい",
+      "vi": "hẹp",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "重い",
+      "reading": "おもい",
+      "vi": "nặng",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "軽い",
+      "reading": "かるい",
+      "vi": "nhẹ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "強い",
+      "reading": "つよい",
+      "vi": "mạnh",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "弱い",
+      "reading": "よわい",
+      "vi": "yếu",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "おいしい",
+      "reading": "おいしい",
+      "vi": "ngon",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "楽しい",
+      "reading": "たのしい",
+      "vi": "vui",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "面白い",
+      "reading": "おもしろい",
+      "vi": "thú vị",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "痛い",
+      "reading": "いたい",
+      "vi": "đau",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "欲しい",
+      "reading": "ほしい",
+      "vi": "muốn có",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "白い",
+      "reading": "しろい",
+      "vi": "trắng",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "黒い",
+      "reading": "くろい",
+      "vi": "đen",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "赤い",
+      "reading": "あかい",
+      "vi": "đỏ",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "青い",
+      "reading": "あおい",
+      "vi": "xanh (lam)",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "好き",
+      "reading": "すき",
+      "vi": "thích",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "嫌い",
+      "reading": "きらい",
+      "vi": "ghét",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "元気",
+      "reading": "げんき",
+      "vi": "khỏe",
+      "han_viet": "NGUYÊN KHÍ",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "便利",
+      "reading": "べんり",
+      "vi": "tiện lợi",
+      "han_viet": "TIỆN LỢI",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "簡単",
+      "reading": "かんたん",
+      "vi": "đơn giản",
+      "han_viet": "GIẢN ĐƠN",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "静か",
+      "reading": "しずか",
+      "vi": "yên tĩnh",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "賑やか",
+      "reading": "にぎやか",
+      "vi": "nhộn nhịp",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "有名",
+      "reading": "ゆうめい",
+      "vi": "nổi tiếng",
+      "han_viet": "HỮU DANH",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "親切",
+      "reading": "しんせつ",
+      "vi": "tử tế",
+      "han_viet": "THÂN THIẾT",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "上手",
+      "reading": "じょうず",
+      "vi": "giỏi",
+      "han_viet": "THƯỢNG THỦ",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "下手",
+      "reading": "へた",
+      "vi": "kém",
+      "han_viet": "HẠ THỦ",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "暇",
+      "reading": "ひま",
+      "vi": "rảnh",
+      "han_viet": "HẠ",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "丈夫",
+      "reading": "じょうぶ",
+      "vi": "bền, chắc",
+      "han_viet": "TRƯỢNG PHU",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "大変",
+      "reading": "たいへん",
+      "vi": "vất vả, nghiêm trọng",
+      "han_viet": "ĐẠI BIẾN",
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "きれい",
+      "reading": "きれい",
+      "vi": "đẹp, sạch",
+      "han_viet": null,
+      "topic": "tính từ",
+      "priority": 2
+    },
+    {
+      "jp": "本",
+      "reading": "ほん",
+      "vi": "sách",
+      "han_viet": "BẢN",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "ノート",
+      "reading": "ノート",
+      "vi": "vở",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "ペン",
+      "reading": "ペン",
+      "vi": "bút",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "鉛筆",
+      "reading": "えんぴつ",
+      "vi": "bút chì",
+      "han_viet": "DUYÊN BÚT",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "紙",
+      "reading": "かみ",
+      "vi": "giấy",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "机",
+      "reading": "つくえ",
+      "vi": "bàn",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "vi": "ghế",
+      "han_viet": "Ỷ TỬ",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "鞄",
+      "reading": "かばん",
+      "vi": "cặp, túi",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "時計",
+      "reading": "とけい",
+      "vi": "đồng hồ",
+      "han_viet": "THỜI KẾ",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "傘",
+      "reading": "かさ",
+      "vi": "ô, dù",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "鍵",
+      "reading": "かぎ",
+      "vi": "chìa khóa",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "財布",
+      "reading": "さいふ",
+      "vi": "ví",
+      "han_viet": "TÀI BỐ",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "お金",
+      "reading": "おかね",
+      "vi": "tiền",
+      "han_viet": "KIM",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "荷物",
+      "reading": "にもつ",
+      "vi": "hành lý",
+      "han_viet": "HÀ VẬT",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "箱",
+      "reading": "はこ",
+      "vi": "hộp",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "写真",
+      "reading": "しゃしん",
+      "vi": "ảnh",
+      "han_viet": "TẢ CHÂN",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "辞書",
+      "reading": "じしょ",
+      "vi": "từ điển",
+      "han_viet": "TỪ THƯ",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "新聞",
+      "reading": "しんぶん",
+      "vi": "báo",
+      "han_viet": "TÂN VĂN",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "薬",
+      "reading": "くすり",
+      "vi": "thuốc",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "服",
+      "reading": "ふく",
+      "vi": "quần áo",
+      "han_viet": "PHỤC",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "靴",
+      "reading": "くつ",
+      "vi": "giày",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "眼鏡",
+      "reading": "めがね",
+      "vi": "kính",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "テレビ",
+      "reading": "テレビ",
+      "vi": "tivi",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "カメラ",
+      "reading": "カメラ",
+      "vi": "máy ảnh",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "カード",
+      "reading": "カード",
+      "vi": "thẻ",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "ドア",
+      "reading": "ドア",
+      "vi": "cửa",
+      "han_viet": null,
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "電気",
+      "reading": "でんき",
+      "vi": "điện, đèn",
+      "han_viet": "ĐIỆN KHÍ",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "車",
+      "reading": "くるま",
+      "vi": "ô tô",
+      "han_viet": "XA",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "自転車",
+      "reading": "じてんしゃ",
+      "vi": "xe đạp",
+      "han_viet": "TỰ CHUYỂN XA",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "物",
+      "reading": "もの",
+      "vi": "đồ vật",
+      "han_viet": "VẬT",
+      "topic": "đồ vật",
+      "priority": 2
+    },
+    {
+      "jp": "家",
+      "reading": "いえ・うち",
+      "vi": "nhà",
+      "han_viet": "GIA",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "学校",
+      "reading": "がっこう",
+      "vi": "trường học",
+      "han_viet": "HỌC HIỆU",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "駅",
+      "reading": "えき",
+      "vi": "nhà ga",
+      "han_viet": "DỊCH",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "店",
+      "reading": "みせ",
+      "vi": "cửa hàng",
+      "han_viet": "ĐIẾM",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "病院",
+      "reading": "びょういん",
+      "vi": "bệnh viện",
+      "han_viet": "BỆNH VIỆN",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "銀行",
+      "reading": "ぎんこう",
+      "vi": "ngân hàng",
+      "han_viet": "NGÂN HÀNG",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "郵便局",
+      "reading": "ゆうびんきょく",
+      "vi": "bưu điện",
+      "han_viet": "BƯU TIỆN CỤC",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "トイレ",
+      "reading": "トイレ",
+      "vi": "nhà vệ sinh",
+      "han_viet": null,
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "部屋",
+      "reading": "へや",
+      "vi": "phòng",
+      "han_viet": "BỘ ỐC",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "道",
+      "reading": "みち",
+      "vi": "đường",
+      "han_viet": "ĐẠO",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "国",
+      "reading": "くに",
+      "vi": "nước, quốc gia",
+      "han_viet": "QUỐC",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "日本",
+      "reading": "にほん",
+      "vi": "Nhật Bản",
+      "han_viet": "NHẬT BẢN",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "ベトナム",
+      "reading": "ベトナム",
+      "vi": "Việt Nam",
+      "han_viet": null,
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "町",
+      "reading": "まち",
+      "vi": "thị trấn, phố",
+      "han_viet": "ĐINH",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "公園",
+      "reading": "こうえん",
+      "vi": "công viên",
+      "han_viet": "CÔNG VIÊN",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "図書館",
+      "reading": "としょかん",
+      "vi": "thư viện",
+      "han_viet": "ĐỒ THƯ QUÁN",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "食堂",
+      "reading": "しょくどう",
+      "vi": "nhà ăn, căng tin",
+      "han_viet": "THỰC ĐƯỜNG",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "コンビニ",
+      "reading": "コンビニ",
+      "vi": "cửa hàng tiện lợi",
+      "han_viet": null,
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "スーパー",
+      "reading": "スーパー",
+      "vi": "siêu thị",
+      "han_viet": null,
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "レストラン",
+      "reading": "レストラン",
+      "vi": "nhà hàng",
+      "han_viet": null,
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "空港",
+      "reading": "くうこう",
+      "vi": "sân bay",
+      "han_viet": "KHÔNG CẢNG",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "vi": "lối vào",
+      "han_viet": "NHẬP KHẨU",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "出口",
+      "reading": "でぐち",
+      "vi": "lối ra",
+      "han_viet": "XUẤT KHẨU",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "上",
+      "reading": "うえ",
+      "vi": "trên",
+      "han_viet": "THƯỢNG",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "下",
+      "reading": "した",
+      "vi": "dưới",
+      "han_viet": "HẠ",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "中",
+      "reading": "なか",
+      "vi": "trong",
+      "han_viet": "TRUNG",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "外",
+      "reading": "そと",
+      "vi": "ngoài",
+      "han_viet": "NGOẠI",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "右",
+      "reading": "みぎ",
+      "vi": "phải",
+      "han_viet": "HỮU",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "左",
+      "reading": "ひだり",
+      "vi": "trái",
+      "han_viet": "TẢ",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "隣",
+      "reading": "となり",
+      "vi": "bên cạnh",
+      "han_viet": "LÂN",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "近く",
+      "reading": "ちかく",
+      "vi": "gần đây",
+      "han_viet": null,
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "場所",
+      "reading": "ばしょ",
+      "vi": "địa điểm",
+      "han_viet": "TRƯỜNG SỞ",
+      "topic": "nơi chốn",
+      "priority": 2
+    },
+    {
+      "jp": "ご飯",
+      "reading": "ごはん",
+      "vi": "cơm, bữa ăn",
+      "han_viet": "PHẠN",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "水",
+      "reading": "みず",
+      "vi": "nước",
+      "han_viet": "THỦY",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "お茶",
+      "reading": "おちゃ",
+      "vi": "trà",
+      "han_viet": "TRÀ",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "vi": "cà phê",
+      "han_viet": null,
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "パン",
+      "reading": "パン",
+      "vi": "bánh mì",
+      "han_viet": null,
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "肉",
+      "reading": "にく",
+      "vi": "thịt",
+      "han_viet": "NHỤC",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "魚",
+      "reading": "さかな",
+      "vi": "cá",
+      "han_viet": "NGƯ",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "野菜",
+      "reading": "やさい",
+      "vi": "rau",
+      "han_viet": "DÃ THÁI",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "果物",
+      "reading": "くだもの",
+      "vi": "trái cây",
+      "han_viet": "QUẢ VẬT",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "卵",
+      "reading": "たまご",
+      "vi": "trứng",
+      "han_viet": null,
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "vi": "sữa bò",
+      "han_viet": "NGƯU NHŨ",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "お酒",
+      "reading": "おさけ",
+      "vi": "rượu",
+      "han_viet": "TỬU",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "朝ご飯",
+      "reading": "あさごはん",
+      "vi": "bữa sáng",
+      "han_viet": "TRIÊU PHẠN",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "昼ご飯",
+      "reading": "ひるごはん",
+      "vi": "bữa trưa",
+      "han_viet": "TRÚ PHẠN",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "晩ご飯",
+      "reading": "ばんごはん",
+      "vi": "bữa tối",
+      "han_viet": "VÃN PHẠN",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "弁当",
+      "reading": "べんとう",
+      "vi": "cơm hộp",
+      "han_viet": "BIỆN ĐƯƠNG",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "料理",
+      "reading": "りょうり",
+      "vi": "món ăn, nấu ăn",
+      "han_viet": "LIỆU LÝ",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "塩",
+      "reading": "しお",
+      "vi": "muối",
+      "han_viet": null,
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "砂糖",
+      "reading": "さとう",
+      "vi": "đường",
+      "han_viet": "SA ĐƯỜNG",
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "vi": "đũa",
+      "han_viet": null,
+      "topic": "ăn uống",
+      "priority": 3
+    },
+    {
+      "jp": "電車",
+      "reading": "でんしゃ",
+      "vi": "tàu điện",
+      "han_viet": "ĐIỆN XA",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "バス",
+      "reading": "バス",
+      "vi": "xe buýt",
+      "han_viet": null,
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "タクシー",
+      "reading": "タクシー",
+      "vi": "taxi",
+      "han_viet": null,
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "飛行機",
+      "reading": "ひこうき",
+      "vi": "máy bay",
+      "han_viet": "PHI HÀNH CƠ",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "地下鉄",
+      "reading": "ちかてつ",
+      "vi": "tàu điện ngầm",
+      "han_viet": "ĐỊA HẠ THIẾT",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "切符",
+      "reading": "きっぷ",
+      "vi": "vé",
+      "han_viet": "THIẾT PHÙ",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "vi": "bản đồ",
+      "han_viet": "ĐỊA ĐỒ",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "交差点",
+      "reading": "こうさてん",
+      "vi": "ngã tư",
+      "han_viet": "GIAO SAI ĐIỂM",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "信号",
+      "reading": "しんごう",
+      "vi": "đèn giao thông",
+      "han_viet": "TÍN HIỆU",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "橋",
+      "reading": "はし",
+      "vi": "cầu",
+      "han_viet": "KIỀU",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "角",
+      "reading": "かど",
+      "vi": "góc (đường)",
+      "han_viet": "GIÁC",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "駐車場",
+      "reading": "ちゅうしゃじょう",
+      "vi": "bãi đỗ xe",
+      "han_viet": "TRÚ XA TRƯỜNG",
+      "topic": "giao thông",
+      "priority": 3
+    },
+    {
+      "jp": "体",
+      "reading": "からだ",
+      "vi": "cơ thể",
+      "han_viet": "THỂ",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "頭",
+      "reading": "あたま",
+      "vi": "đầu",
+      "han_viet": "ĐẦU",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "目",
+      "reading": "め",
+      "vi": "mắt",
+      "han_viet": "MỤC",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "耳",
+      "reading": "みみ",
+      "vi": "tai",
+      "han_viet": "NHĨ",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "口",
+      "reading": "くち",
+      "vi": "miệng",
+      "han_viet": "KHẨU",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "手",
+      "reading": "て",
+      "vi": "tay",
+      "han_viet": "THỦ",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "足",
+      "reading": "あし",
+      "vi": "chân",
+      "han_viet": "TÚC",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "声",
+      "reading": "こえ",
+      "vi": "giọng",
+      "han_viet": "THANH",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "風邪",
+      "reading": "かぜ",
+      "vi": "cảm lạnh",
+      "han_viet": "PHONG TÀ",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "病気",
+      "reading": "びょうき",
+      "vi": "bệnh",
+      "han_viet": "BỆNH KHÍ",
+      "topic": "thân thể",
+      "priority": 3
+    },
+    {
+      "jp": "天気",
+      "reading": "てんき",
+      "vi": "thời tiết",
+      "han_viet": "THIÊN KHÍ",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "雨",
+      "reading": "あめ",
+      "vi": "mưa",
+      "han_viet": "VŨ",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "雪",
+      "reading": "ゆき",
+      "vi": "tuyết",
+      "han_viet": "TUYẾT",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "風",
+      "reading": "かぜ",
+      "vi": "gió",
+      "han_viet": "PHONG",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "空",
+      "reading": "そら",
+      "vi": "bầu trời",
+      "han_viet": "KHÔNG",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "山",
+      "reading": "やま",
+      "vi": "núi",
+      "han_viet": "SƠN",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "川",
+      "reading": "かわ",
+      "vi": "sông",
+      "han_viet": "XUYÊN",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "海",
+      "reading": "うみ",
+      "vi": "biển",
+      "han_viet": "HẢI",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "花",
+      "reading": "はな",
+      "vi": "hoa",
+      "han_viet": "HOA",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "木",
+      "reading": "き",
+      "vi": "cây",
+      "han_viet": "MỘC",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "犬",
+      "reading": "いぬ",
+      "vi": "chó",
+      "han_viet": "KHUYỂN",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "猫",
+      "reading": "ねこ",
+      "vi": "mèo",
+      "han_viet": "MIÊU",
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "晴れ",
+      "reading": "はれ",
+      "vi": "trời nắng",
+      "han_viet": null,
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "曇り",
+      "reading": "くもり",
+      "vi": "trời âm u",
+      "han_viet": null,
+      "topic": "thiên nhiên",
+      "priority": 3
+    },
+    {
+      "jp": "日本語",
+      "reading": "にほんご",
+      "vi": "tiếng Nhật",
+      "han_viet": "NHẬT BẢN NGỮ",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "英語",
+      "reading": "えいご",
+      "vi": "tiếng Anh",
+      "han_viet": "ANH NGỮ",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "言葉",
+      "reading": "ことば",
+      "vi": "từ, ngôn ngữ",
+      "han_viet": "NGÔN DIỆP",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "漢字",
+      "reading": "かんじ",
+      "vi": "chữ Hán",
+      "han_viet": "HÁN TỰ",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "意味",
+      "reading": "いみ",
+      "vi": "ý nghĩa",
+      "han_viet": "Ý VỊ",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "宿題",
+      "reading": "しゅくだい",
+      "vi": "bài tập về nhà",
+      "han_viet": "TÚC ĐỀ",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "授業",
+      "reading": "じゅぎょう",
+      "vi": "giờ học",
+      "han_viet": "THỤ NGHIỆP",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "試験",
+      "reading": "しけん",
+      "vi": "kỳ thi",
+      "han_viet": "THÍ NGHIỆM",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "大学",
+      "reading": "だいがく",
+      "vi": "đại học",
+      "han_viet": "ĐẠI HỌC",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "字",
+      "reading": "じ",
+      "vi": "chữ",
+      "han_viet": "TỰ",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "話",
+      "reading": "はなし",
+      "vi": "câu chuyện",
+      "han_viet": "THOẠI",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "音楽",
+      "reading": "おんがく",
+      "vi": "âm nhạc",
+      "han_viet": "ÂM NHẠC",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "映画",
+      "reading": "えいが",
+      "vi": "phim",
+      "han_viet": "ÁNH HỌA",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "歌",
+      "reading": "うた",
+      "vi": "bài hát",
+      "han_viet": "CA",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "絵",
+      "reading": "え",
+      "vi": "tranh",
+      "han_viet": "HỘI",
+      "topic": "học tập",
+      "priority": 3
+    },
+    {
+      "jp": "とても",
+      "reading": "とても",
+      "vi": "rất",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "少し",
+      "reading": "すこし",
+      "vi": "một chút",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "ちょっと",
+      "reading": "ちょっと",
+      "vi": "một chút (thân mật)",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "たくさん",
+      "reading": "たくさん",
+      "vi": "nhiều",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "全部",
+      "reading": "ぜんぶ",
+      "vi": "toàn bộ",
+      "han_viet": "TOÀN BỘ",
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "一緒に",
+      "reading": "いっしょに",
+      "vi": "cùng nhau",
+      "han_viet": "NHẤT TỰ",
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "また",
+      "reading": "また",
+      "vi": "lại, nữa",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "もっと",
+      "reading": "もっと",
+      "vi": "hơn nữa",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "本当に",
+      "reading": "ほんとうに",
+      "vi": "thật sự",
+      "han_viet": "BẢN ĐƯƠNG",
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "たぶん",
+      "reading": "たぶん",
+      "vi": "có lẽ",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "初めて",
+      "reading": "はじめて",
+      "vi": "lần đầu",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "だけ",
+      "reading": "だけ",
+      "vi": "chỉ",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "でも",
+      "reading": "でも",
+      "vi": "nhưng",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "そして",
+      "reading": "そして",
+      "vi": "và, rồi",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "それから",
+      "reading": "それから",
+      "vi": "sau đó",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "から",
+      "reading": "から",
+      "vi": "vì / từ",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "まで",
+      "reading": "まで",
+      "vi": "đến, cho tới",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "はい",
+      "reading": "はい",
+      "vi": "vâng",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "いいえ",
+      "reading": "いいえ",
+      "vi": "không",
+      "han_viet": null,
+      "topic": "trạng từ",
+      "priority": 2
+    },
+    {
+      "jp": "結構です",
+      "reading": "けっこうです",
+      "vi": "đủ rồi, không cần / được rồi",
+      "han_viet": "KẾT CẤU",
+      "topic": "trạng từ",
+      "priority": 2
+    }
+  ]
+}
