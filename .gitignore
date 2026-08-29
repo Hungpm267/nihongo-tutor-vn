@@ -1,0 +1,13 @@
+# Tiến độ học tập là dữ liệu cá nhân, không đẩy lên GitHub
+progress.json
+*.progress.json
+.nihongo-tutor/
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Trình soạn thảo
+.vscode/
+.idea/
+*.swp

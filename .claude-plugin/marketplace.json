@@ -1,0 +1,19 @@
+{
+  "name": "nihongo-skills",
+  "owner": {
+    "name": "TÊN_CỦA_BẠN"
+  },
+  "metadata": {
+    "description": "Skill dạy tiếng Nhật cho người Việt, tối ưu cho dân IT làm việc tại công ty Nhật.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "nihongo-tutor-vn",
+      "source": "./",
+      "description": "Gia sư tiếng Nhật cho người Việt học từ đầu: dạy kanji qua âm Hán-Việt, katakana sớm cho dân IT, ôn tập giãn cách Leitner, ba chế độ buổi học 10/25/50 phút.",
+      "category": "education",
+      "tags": ["japanese", "language-learning", "vietnamese", "jlpt", "kanji"]
+    }
+  ]
+}

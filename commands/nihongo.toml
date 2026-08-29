@@ -1,0 +1,12 @@
+description = "Bắt đầu một buổi học tiếng Nhật với gia sư nihongo-tutor-vn."
+
+prompt = """
+Kích hoạt skill nihongo-tutor-vn và bắt đầu một buổi học tiếng Nhật.
+
+Đọc skills/nihongo-tutor-vn/SKILL.md rồi làm theo toàn bộ quy trình trong đó:
+đọc tiến độ ở ~/.nihongo-tutor/progress.json, hỏi thu hoạch từ nơi làm việc,
+xác định chế độ buổi học, ôn tập giãn cách, dạy nội dung mới, và lưu tiến độ
+ở cuối buổi.
+
+Yêu cầu thêm của người dùng cho buổi này (có thể để trống): {{args}}
+"""

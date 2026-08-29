@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Tài nguyên học tiếng Nhật cho người Việt, ưu tiên nguồn tiếng Việt và nguồn miễn phí. Dùng khi người dùng hỏi nên học thêm ở đâu, hoặc khi giao bài nghe.",
+    "usage": "Lọc theo stage và need. Mỗi lần chỉ gợi ý 1 lựa chọn chính cộng tối đa 2 phương án thay thế, kèm lý do gắn với tiến độ thực tế trong progress.json. Đừng liệt kê cả danh sách.",
+    "caveat": "Giá cả, đường dẫn và tình trạng hoạt động có thể đã thay đổi. Khuyên người dùng tự kiểm tra lại trước khi mua hoặc đăng ký."
+  },
+
+  "dictionaries": [
+    {
+      "id": "mazii",
+      "name": "Mazii",
+      "language": "vi",
+      "cost": "Miễn phí",
+      "why": "Từ điển Nhật-Việt tốt nhất hiện nay. Tra kanji ra luôn âm Hán-Việt, đúng thứ skill này dựa vào. Nhận diện chữ bằng camera và vẽ tay, rất hợp khi gặp chữ lạ trên bảng thông báo ở công ty.",
+      "stage": ["kana", "foundation", "n5", "n4"],
+      "priority": "Cài ngay từ buổi đầu"
+    },
+    {
+      "id": "jisho",
+      "name": "Jisho.org",
+      "language": "en",
+      "cost": "Miễn phí",
+      "why": "Tra bằng tiếng Anh, dữ liệu ngữ pháp và ví dụ phong phú hơn. Hữu ích khi Mazii cho nghĩa quá ngắn.",
+      "stage": ["foundation", "n5", "n4"]
+    }
+  ],
+
+  "kana": [
+    {
+      "id": "kana-drill",
+      "name": "Ứng dụng luyện kana (Kana Town, Dr. Moku, hoặc tương đương)",
+      "cost": "Miễn phí hoặc rẻ",
+      "why": "Luyện nhận mặt chữ cần lặp lại nhiều lần ngắn, hợp với app hơn là hội thoại. Dùng song song với buổi học chứ không thay thế.",
+      "stage": ["kana"],
+      "how": "Mỗi ngày 5 phút, chỉ luyện các hàng đã học trong buổi."
+    },
+    {
+      "id": "kana-writing",
+      "name": "Tập viết tay kana",
+      "cost": "Một quyển vở",
+      "why": "Viết tay giúp nhớ hình chữ tốt hơn hẳn chỉ nhìn, đặc biệt với các cặp dễ nhầm như シ/ツ, れ/ね/わ. Không cần đẹp, cần đúng thứ tự nét.",
+      "stage": ["kana"]
+    }
+  ],
+
+  "textbooks": [
+    {
+      "id": "minna-vi",
+      "name": "Minna no Nihongo (bản dịch tiếng Việt)",
+      "language": "vi",
+      "cost": "Khoảng 100–200k/quyển tại VN",
+      "why": "Giáo trình phổ biến nhất ở Việt Nam. Ưu điểm lớn nhất là hầu như trung tâm và đồng nghiệp nào cũng dùng, nên dễ hỏi và dễ tìm tài liệu bổ trợ tiếng Việt.",
+      "stage": ["foundation", "n5"],
+      "note": "Sách chính toàn tiếng Nhật, phần giải thích nằm ở quyển dịch riêng. Cần mua cả hai."
+    },
+    {
+      "id": "try-n5",
+      "name": "Try! N5",
+      "cost": "Khoảng 150k",
+      "why": "Ngữ pháp trình bày gọn, có bài đọc và nghe kèm. Hợp làm sách phụ bên cạnh Minna.",
+      "stage": ["n5"]
+    },
+    {
+      "id": "mimikara-n4",
+      "name": "Mimikara Oboeru (bản tiếng Việt)",
+      "language": "vi",
+      "cost": "Khoảng 150–250k",
+      "why": "Bộ từ vựng và kanji có file nghe đi kèm, giải nghĩa tiếng Việt. Dùng khi bước vào N4.",
+      "stage": ["n4"]
+    }
+  ],
+
+  "vocab_tools": [
+    {
+      "id": "anki",
+      "name": "Anki",
+      "cost": "Miễn phí (iOS tính phí một lần)",
+      "why": "Ôn tập giãn cách tự động. Người dùng làm IT nên sẽ thoải mái với việc tự tạo deck. Đáng dùng nhất khi tự gõ thẻ từ chính từ vựng thu được ở công ty, thay vì tải deck có sẵn.",
+      "stage": ["foundation", "n5", "n4"],
+      "setup": "Khoảng 30 phút để làm quen"
+    },
+    {
+      "id": "migii",
+      "name": "Migii JLPT",
+      "language": "vi",
+      "cost": "Miễn phí có giới hạn, bản trả phí rẻ",
+      "why": "App luyện đề JLPT của người Việt, giao diện tiếng Việt, có giải thích. Chỉ dùng khi đã đặt mốc thi cụ thể — luyện đề quá sớm sẽ chán.",
+      "stage": ["n5", "n4"]
+    }
+  ],
+
+  "listening": [
+    {
+      "id": "nhk-easy",
+      "name": "NHK News Web Easy",
+      "cost": "Miễn phí",
+      "why": "Tin tức viết lại đơn giản, có furigana đầy đủ và audio đọc chậm. Bài ngắn, hợp với lịch thất thường.",
+      "stage": ["n5", "n4"],
+      "how": "Mỗi lần một bài. Giai đoạn đầu chỉ cần nghe và bắt được vài từ quen, không cần hiểu hết."
+    },
+    {
+      "id": "teppei-beginner",
+      "name": "Nihongo con Teppei for Beginners (podcast)",
+      "cost": "Miễn phí",
+      "why": "Nói chậm, toàn tiếng Nhật đơn giản, mỗi tập 3–5 phút. Vì tập rất ngắn nên dễ duy trì thói quen — điểm quan trọng với người có lịch bận.",
+      "stage": ["foundation", "n5"],
+      "how": "Nghe khi đi làm. Không cần hiểu hết, mục tiêu là quen nhịp và âm."
+    },
+    {
+      "id": "comprehensible-japanese",
+      "name": "Comprehensible Japanese (YouTube)",
+      "cost": "Miễn phí",
+      "why": "Dùng hình ảnh và cử chỉ để truyền nghĩa, không cần dịch. Có series Complete Beginner nghe được ngay cả khi mới học kana.",
+      "stage": ["kana", "foundation", "n5"]
+    }
+  ],
+
+  "youtube_vi": [
+    {
+      "id": "vi-channels",
+      "name": "Kênh dạy tiếng Nhật tiếng Việt (Dũng Mori, Riki Nihongo, Tiếng Nhật Đơn Giản, Akira Education)",
+      "language": "vi",
+      "cost": "Miễn phí",
+      "why": "Giải thích ngữ pháp bằng tiếng Việt, có nói tới đúng những lỗi người Việt hay mắc mà tài liệu tiếng Anh không đề cập. Hữu ích khi một điểm ngữ pháp trong buổi học vẫn còn mơ hồ.",
+      "stage": ["kana", "foundation", "n5", "n4"],
+      "how": "Dùng để xem lại điểm nào chưa thông, không dùng làm nguồn học chính — xem video thụ động dễ tạo ảo giác đã hiểu."
+    }
+  ],
+
+  "speaking": [
+    {
+      "id": "colleagues",
+      "name": "Đồng nghiệp người Nhật tại công ty",
+      "cost": "Miễn phí",
+      "why": "Tài nguyên giá trị nhất mà người dùng đang có sẵn và hầu như chắc chắn đang lãng phí. Mỗi ngày chỉ cần chào một câu tiếng Nhật rồi tăng dần. Người Nhật thường phản ứng rất tích cực khi người nước ngoài thử nói tiếng họ.",
+      "stage": ["kana", "foundation", "n5", "n4"],
+      "how": "Bắt đầu từ おはようございます và お疲れ様です. Đặt mục tiêu nhỏ: mỗi tuần thêm một câu mới."
+    },
+    {
+      "id": "italki",
+      "name": "iTalki",
+      "cost": "Khoảng 8–20 USD/giờ",
+      "why": "Gia sư người Nhật dạy 1-1. Chỉ đáng bỏ tiền khi đã qua giai đoạn kana và có nền ngữ pháp cơ bản, nếu không sẽ tốn tiền cho việc học thứ tự học một mình cũng được.",
+      "stage": ["n5", "n4"]
+    }
+  ],
+
+  "weak_areas": {
+    "kana_confusion": "Luyện viết tay các cặp dễ nhầm, mỗi cặp một dòng: シ/ツ, ソ/ン, れ/ね/わ, さ/き",
+    "particles": "Trợ từ là lỗi phổ biến nhất của người Việt vì tiếng Việt không có. Tăng bài tập điền trợ từ, và mỗi lần sai thì giải thích lại vai trò chứ không chỉ đưa đáp án đúng.",
+    "te_form": "Chia thể て cần luyện cơ học. Làm bảng chia và luyện lặp cho tới khi phản xạ.",
+    "long_short_vowel": "Trường âm và âm ngắt っ thay đổi nghĩa hoàn toàn (おばさん/おばあさん). Người Việt hay bỏ qua vì tiếng Việt không phân biệt độ dài. Nhấn khi dạy phát âm.",
+    "listening": "Nghe là kỹ năng chậm nhất và cần tiếp xúc âm thanh hằng ngày. Ưu tiên nghe ngắn mỗi ngày hơn nghe dài mỗi tuần."
+  }
+}

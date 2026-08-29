@@ -1,0 +1,11 @@
+{
+  "name": "nihongo-tutor-vn",
+  "displayName": "Gia sư tiếng Nhật cho người Việt",
+  "version": "1.0.0",
+  "description": "Gia sư tiếng Nhật cá nhân hóa cho người Việt bắt đầu từ con số 0, đặc biệt dành cho dân IT làm việc trong môi trường công ty Nhật.",
+  "author": {
+    "name": "TÊN_CỦA_BẠN"
+  },
+  "license": "MIT",
+  "keywords": ["japanese", "jlpt", "kanji", "han-viet", "vietnamese", "language-learning"]
+}
