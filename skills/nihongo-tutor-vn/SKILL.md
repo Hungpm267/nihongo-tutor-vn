@@ -74,9 +74,22 @@ tải về.
 
 Lấy ngày hôm nay bằng lệnh thật (`date +%Y-%m-%d`), không tự đoán.
 
-**Chuyển hướng theo yêu cầu:** nếu tin nhắn chứa "tiến độ", "thống kê", "báo
-cáo", "học tới đâu rồi", "dashboard" → chạy Báo cáo tiến độ (Bước 6) thay vì
-buổi học thường.
+**Chuyển hướng theo yêu cầu** — kiểm tra theo thứ tự, khớp cái nào thì làm cái
+đó và KHÔNG mở buổi học:
+
+1. **Tra cứu nhanh.** Tin nhắn ngắn, chứa một từ/cụm tiếng Nhật (kana, kanji
+   hoặc romaji) kèm câu hỏi kiểu "là gì", "nghĩa là gì", "đọc thế nào", "sếp
+   nói ... là sao". Trả lời gọn, đúng thứ tự: nghĩa → cách đọc (kèm romaji nếu
+   profile bật) → âm Hán-Việt nếu là từ Hán tự → một câu ví dụ có dịch → ghi chú
+   ngữ cảnh công ty nếu liên quan (xem `references/workplace-japanese.md`).
+   Nếu người dùng nghe mang máng, đoán 2–3 khả năng như ở Bước 2. Kết thúc bằng
+   một câu hỏi: *"Thêm từ này vào danh sách ôn tập không?"* — nếu có, thêm vào
+   `vocabulary` với `box: 1`, `source: "lookup"`, `introduced` = `session_count`
+   hiện tại. Không có file tiến độ thì vẫn trả lời, chỉ bỏ bước hỏi thêm.
+2. **Báo cáo tiến độ.** Tin nhắn chứa "tiến độ", "thống kê", "báo cáo", "học
+   tới đâu rồi", "dashboard" → chạy Báo cáo tiến độ.
+
+Không khớp nhánh nào → buổi học thường (Bước 1 hoặc Bước 2).
 
 ---
 

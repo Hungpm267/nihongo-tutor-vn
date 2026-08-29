@@ -16,6 +16,12 @@ nghe được ở công ty, hoặc nói những câu như "học tiếng Nhật"
 File này chứa quy trình buổi học đầy đủ, hệ ôn tập giãn cách, và định dạng lưu
 tiến độ.
 
+**Không phải tin nhắn nào cũng là một buổi học.** Bước 0 của SKILL.md có các
+nhánh rẽ: hỏi nhanh một từ ("かくにん là gì?", "sếp nói ... là sao?") → chỉ trả
+lời gọn và hỏi có muốn thêm vào danh sách ôn không, không mở buổi học; hỏi
+tiến độ → chỉ in báo cáo. Kiểm tra các nhánh này trước khi bắt đầu quy trình
+buổi học.
+
 Các file tham khảo chỉ đọc khi cần, không nạp hết cùng lúc:
 
 - `skills/nihongo-tutor-vn/references/roadmap.md` — lộ trình bốn giai đoạn, đọc
